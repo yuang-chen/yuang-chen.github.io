@@ -1,13 +1,14 @@
 ---
 permalink: /
-title: "About Me"
+title: 
 excerpt: "YuAng"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
-
+Bio
+======
 Currently, I am a PhD candidate at The Chinese University of Hong Kong (CUHK) on Shenzhen campus. I'm fortunately advised by Professor [Yeh-Ching Chung](http://www.cs.nthu.edu.tw/~ychung/). My research focuses on High Performance Computing, Graph Analytics, Multicore and Distributed Systems. Meanwhile, I am intereted in Graph Neural Network (GNN) and the acceleration towards GNN. 
 
 In 2018, I received my dual master degrees in Embedded/Multicore Systems from TU Eindhoven, Netherlands and TU Berlin, Germany with full scholarship offered by European Union. In 2017-2018, I worked as Masterarbeitor (i.e., intern) in Frauhofer FOKUS to build Germany's e-health infrastructure, based on which I developed my master thesis.
@@ -29,6 +30,9 @@ Publications
 Teaching
 =====
 2020 Spring: Introduction to Programming Methodology 
+
 2020 Fall  : Operating System
+
 2021 Spring: Compiler Design
+
 2021 Fall  : Operating System
