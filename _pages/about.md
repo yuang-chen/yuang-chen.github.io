@@ -28,7 +28,7 @@ Publications
 
 Teaching
 =====
-2020 Spring: Introduction to Programming Methodology  
-2020 Fall  : Operating System  
-2021 Spring: Compiler Design   
-2021 Fall  : Operating System  
+2020&nbsp; Spring : Introduction to Programming Methodology  
+2020&nbsp; Fall&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Operating System  
+2021 &nbsp;Spring : Compiler Design   
+2021 &nbsp;Fall &nbsp;&nbsp;&nbsp;&nbsp; : Operating System  
