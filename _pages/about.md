@@ -29,15 +29,16 @@ Publications
 
 **YuAng Chen** and Yeh-Ching Chung, “Corder: Cache-Aware Reordering For Optimizing Graph Analytics,” *Proceedings of ACM International conference on Principles and Practice of Parallel Programming (PPoPP)*, 2021, pp.472-473.
 
-### _<ins>Ongoing Work</ins>_
+ _<ins>Ongoing Work</ins>_
 
-**YuAng Chen** and Yeh-Ching Chung, "A Dynamic Caching Strategy for Shared-Memory Graph Analytics", under revision of *IEEE Transactions on Parallel and Distributed Systems (TPDS*.
+**YuAng Chen** and Yeh-Ching Chung, "A Dynamic Caching Strategy for Shared-Memory Graph Analytics", under revision of *IEEE Transactions on Parallel and Distributed Systems (TPDS)*.
 
 **YuAng Chen** and Yeh-Ching Chung, "Co-Design of Mixed Matrix Format and Processing Engine for Efficient SpMV on Graphs", under review of *IEEE CLUSTER 2022*
 
 **YuAng Chen** and Yeh-Ching Chung, " Locality Extraction & Blocking for Graph Adjacency Matrix Multiplications", in preparation for *TPDS*
 
-------
+<!-- ------
+
 Toy Projects
 =====
 GNN in C++
@@ -48,7 +49,7 @@ GNN in C++
 
 Deep GNN using Pytorch
 * Investigate the architecture of deep GNN with application on text classification
-* Build an 8-layer GCN with residual connection and k-NN dilation
+* Build an 8-layer GCN with residual connection and k-NN dilation -->
 
 Teaching
 =====
