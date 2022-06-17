@@ -51,6 +51,8 @@ Deep GNN using Pytorch
 * Investigate the architecture of deep GNN with application on text classification
 * Build an 8-layer GCN with residual connection and k-NN dilation -->
 
+-------
+
 Teaching
 =====
 2020&nbsp; Spring : Introduction to Programming Methodology  
