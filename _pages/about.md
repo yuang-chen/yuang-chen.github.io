@@ -23,11 +23,11 @@ My CV is [da](https://github.com/yuang-chen/yuang-chen.github.io/raw/main/files/
 
 Publications
 ======
-**YuAng Chen** and Yeh-Ching Chung, “Workload Balancing via Graph Reordering on Multicore Systems,” To appear in *IEEE Transactions on Parallel and Distributed Systems*.
+**YuAng Chen** and Yeh-Ching Chung, “Workload Balancing via Graph Reordering on Multicore Systems,” *IEEE Transactions on Parallel and Distributed Systems* (TPDS), Vol. 33, No. 5, 2022, pp. 1231-1245.
 
-**YuAng Chen** and Yeh-Ching Chung, “HiPa: Hierarchical Partitioning for Fast Page Rank on Multicore Systems,” To appear in *Proceedings of IEEE International conference on Parallel Processing (ICPP)*, 2021.
+**YuAng Chen** and Yeh-Ching Chung, “HiPa: Hierarchical Partitioning for Fast Page Rank on Multicore Systems,” *Proceedings of IEEE International conference on Parallel Processing* (ICPP), Article No. 24, 2021, pp. 1-10.
 
-**YuAng Chen** and Yeh-Ching Chung, “Corder: Cache-Aware Reordering For Optimizing Graph Analytics,” *Proceedings of ACM International conference on Principles and Practice of Parallel Programming (PPoPP)*, 2021, pp.472-473.
+**YuAng Chen** and Yeh-Ching Chung, “Corder: Cache-Aware Reordering For Optimizing Graph Analytics,” *Proceedings of ACM International conference on Principles and Practice of Parallel Programming* (PPoPP), 2021, pp.472-473.
 
  _<ins>Ongoing Work</ins>_
 
