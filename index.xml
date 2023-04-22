@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Yac&#39;s Blog</title>
+    <link>https://yuang-chen.github.io/</link>
+    <description>Recent content on Yac&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 21 Apr 2023 20:22:59 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2023 04 21 Overview</title>
+      <link>https://yuang-chen.github.io/posts/2023-04-21-overview/</link>
+      <pubDate>Fri, 21 Apr 2023 20:22:59 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2023-04-21-overview/</guid>
+      <description>Desc Text.</description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>https://yuang-chen.github.io/aboutme/</link>
+      <pubDate>Fri, 21 Apr 2023 20:06:19 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/aboutme/</guid>
+      <description>I am now a Postdoc at CUHK, and graduated from CUHK on Shenzhen campus for my PhD.
+My research focuses on High-Performance Graph Processing on Multicore Systems, where the irregularrity of graph workloads are exploited to maximize the computing efficiency of modern multicore machines. I am broadly interesed in graph-related problems on diverse computing platforms, including CPUs (OpenMP), GPUs (CUDA), and clusters (MPI, RMDA). The core of my reseach is to investigate the interaction between graphs and underlying hardware.</description>
+    </item>
+    
+    
+    
+  </channel>
+</rss>
