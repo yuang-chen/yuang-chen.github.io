@@ -6,13 +6,22 @@
     <description>Recent content in Tags on Yac&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 Apr 2023 10:16:34 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 27 Apr 2023 13:27:50 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>c&#43;&#43;</title>
       <link>https://yuang-chen.github.io/tags/c&#43;&#43;/</link>
-      <pubDate>Tue, 25 Apr 2023 10:16:34 +0800</pubDate>
+      <pubDate>Thu, 27 Apr 2023 13:27:50 +0800</pubDate>
       
       <guid>https://yuang-chen.github.io/tags/c&#43;&#43;/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SIMD</title>
+      <link>https://yuang-chen.github.io/tags/simd/</link>
+      <pubDate>Thu, 27 Apr 2023 13:27:50 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/tags/simd/</guid>
       <description></description>
     </item>
     

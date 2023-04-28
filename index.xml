@@ -6,7 +6,18 @@
     <description>Recent content on Yac&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 Apr 2023 10:16:34 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 27 Apr 2023 13:27:50 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title> Gather with SIMD</title>
+      <link>https://yuang-chen.github.io/posts/2023-04-27-gather-simd/</link>
+      <pubDate>Thu, 27 Apr 2023 13:27:50 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2023-04-27-gather-simd/</guid>
+      <description>Gather with Intel In AVX512, Scatter and Gather are operations to store/load data from a data array to a target vec, according to an index vec.
+Gather This is how gather used:
+normal code std::vector&amp;lt;float&amp;gt; x = /*some data*/ std::vector&amp;lt;int&amp;gt; idx = /* index */ for(auto i: idx) { auto data = x[i]; } SIMD code int simd_width = 16; for(size_t i = 0; i &amp;lt; x.size(); i+= simd_width) { __m512i idx_vec = _mm512_loadu_epi32(&amp;amp;idx[i]); __m512 x_vec = _mm512_i32gather_ps(idx_vec, &amp;amp;x[0], sizeof(float)); } The code snippet is to get the data from the vector x based on the index register idx_vec and store the resultant data into the result register x_vec.</description>
+    </item>
+    
     <item>
       <title>Parallel Algorithms from Libraries</title>
       <link>https://yuang-chen.github.io/posts/2023-04-25-par-algo/</link>
