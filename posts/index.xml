@@ -30,6 +30,17 @@ normal code std::vector&amp;lt;float&amp;gt; x = /*some data*/ std::vector&amp;l
     </item>
     
     <item>
+      <title>SIMD is Pain</title>
+      <link>https://yuang-chen.github.io/posts/2023-04-25-simd-pain-intro/</link>
+      <pubDate>Tue, 25 Apr 2023 20:59:39 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2023-04-25-simd-pain-intro/</guid>
+      <description>Writing code with SIMD for vectorization is painful. It deserves a blog series to record all sorts of pains I have encountered and (partially) overcome.
+Indeed, once the pain of coding and debugging is finished, the program is lightning-faster. Nonetheless, I am here to complain instead of praising. Let me state why writing SIMD code is causing me emotional damage:
+a single line of normal c++ code could be easily inflated to a dozen lines of code.</description>
+    </item>
+    
+    <item>
       <title>Parallel Algorithms from Libraries</title>
       <link>https://yuang-chen.github.io/posts/2023-04-25-par-algo/</link>
       <pubDate>Tue, 25 Apr 2023 10:16:34 +0800</pubDate>
