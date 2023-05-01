@@ -6,7 +6,18 @@
     <description>Recent content on Yac&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Apr 2023 13:27:50 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 May 2023 12:53:14 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vector vs Array</title>
+      <link>https://yuang-chen.github.io/posts/2023-05-01-vector-vs-array/</link>
+      <pubDate>Mon, 01 May 2023 12:53:14 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2023-05-01-vector-vs-array/</guid>
+      <description>Another post recycled from my earlier notes. I really don&amp;rsquo;t have motivation to improve it further 🦥.
+Vector vs Array Initilization The Vector is the preferred choice for data storage in mordern C++. It is internally implemented based on the Array. However, the performance gap between the two is indeed obvious.
+The Vector can be initialized via std::vector&amp;lt;T&amp;gt; vec(size). Meanwhile, an Array is initialized by T* arr = new T[size]</description>
+    </item>
+    
     <item>
       <title> Gather with SIMD</title>
       <link>https://yuang-chen.github.io/posts/2023-04-27-gather-simd/</link>
@@ -28,15 +39,6 @@ normal code std::vector&amp;lt;float&amp;gt; x = /*some data*/ std::vector&amp;l
 C++17 new feature &amp;ndash; parallel algorithms The parallel algorithms and execution policies are introduced in C++17. Unfortuantely, according to CppReference, only GCC and Intel support these features. Clang still leaves them unimplemented.
 A blog about it.
 The parallel library brough by C++17 requires the usage of Intel&amp;rsquo;s oneTBB for multithreading.</description>
-    </item>
-    
-    <item>
-      <title>2023 04 21 Overview</title>
-      <link>https://yuang-chen.github.io/posts/2023-04-21-overview/</link>
-      <pubDate>Fri, 21 Apr 2023 20:22:59 +0800</pubDate>
-      
-      <guid>https://yuang-chen.github.io/posts/2023-04-21-overview/</guid>
-      <description>Desc Text.</description>
     </item>
     
     <item>
