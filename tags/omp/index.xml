@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>omp on Yac&#39;s Blog</title>
+    <link>https://yuang-chen.github.io/tags/omp/</link>
+    <description>Recent content in omp on Yac&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 02 May 2023 10:34:19 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/tags/omp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Omp Parallel Region</title>
+      <link>https://yuang-chen.github.io/posts/2023-05-02-omp-parallel-region/</link>
+      <pubDate>Tue, 02 May 2023 10:34:19 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2023-05-02-omp-parallel-region/</guid>
+      <description>The results look suspicious to me&amp;hellip; But I wrote down this note many days ago 🦥. Maybe I need to evaluate it again.
+Multiple Parallel Regions The cost of constructing parallel region is expensive in OpenMP. Let&amp;rsquo;s use two example for illustration:
+Three loops operating on a vector of size 2^31, e.g.,
+for(size_t i = 0; i &amp;lt; vec.size(); i++) vec[i] += 1, vec[i] *= 0.9, vec[i] /= 7, Case 1: a large parallel region including the three loops by omp parallel { omp for }</description>
+    </item>
+    
+    <item>
+      <title>Omp Collapse</title>
+      <link>https://yuang-chen.github.io/posts/2023-05-02-omp-collapse/</link>
+      <pubDate>Tue, 02 May 2023 10:28:18 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2023-05-02-omp-collapse/</guid>
+      <description>One of my old-day notes 🦥.
+Collapse of Nested Loops The collapse clause converts a prefect nested loop into a single loop then parallelize it. The condition of a perfect nested loop is that, the inner loop is tightly included by the outer loop, and no other codes lying between:
+for(int i = 0 ... ) { for(int j = 0 ...) { task[i][j]; } } Such condition is hard to meet.</description>
+    </item>
+    
+  </channel>
+</rss>

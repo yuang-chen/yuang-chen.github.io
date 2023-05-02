@@ -3,21 +3,30 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://yuang-chen.github.io/tags/c&#43;&#43;/</loc>
-    <lastmod>2023-05-01T12:53:14+08:00</lastmod>
+    <lastmod>2023-05-02T10:34:19+08:00</lastmod>
+  </url><url>
+    <loc>https://yuang-chen.github.io/tags/omp/</loc>
+    <lastmod>2023-05-02T10:34:19+08:00</lastmod>
+  </url><url>
+    <loc>https://yuang-chen.github.io/posts/2023-05-02-omp-parallel-region/</loc>
+    <lastmod>2023-05-02T10:34:19+08:00</lastmod>
   </url><url>
     <loc>https://yuang-chen.github.io/tags/performance/</loc>
-    <lastmod>2023-05-01T12:53:14+08:00</lastmod>
+    <lastmod>2023-05-02T10:34:19+08:00</lastmod>
   </url><url>
     <loc>https://yuang-chen.github.io/posts/</loc>
-    <lastmod>2023-05-01T12:53:14+08:00</lastmod>
+    <lastmod>2023-05-02T10:34:19+08:00</lastmod>
   </url><url>
     <loc>https://yuang-chen.github.io/tags/</loc>
-    <lastmod>2023-05-01T12:53:14+08:00</lastmod>
-  </url><url>
-    <loc>https://yuang-chen.github.io/posts/2023-05-01-vector-vs-array/</loc>
-    <lastmod>2023-05-01T12:53:14+08:00</lastmod>
+    <lastmod>2023-05-02T10:34:19+08:00</lastmod>
   </url><url>
     <loc>https://yuang-chen.github.io/</loc>
+    <lastmod>2023-05-02T10:34:19+08:00</lastmod>
+  </url><url>
+    <loc>https://yuang-chen.github.io/posts/2023-05-02-omp-collapse/</loc>
+    <lastmod>2023-05-02T10:28:18+08:00</lastmod>
+  </url><url>
+    <loc>https://yuang-chen.github.io/posts/2023-05-01-vector-vs-array/</loc>
     <lastmod>2023-05-01T12:53:14+08:00</lastmod>
   </url><url>
     <loc>https://yuang-chen.github.io/posts/2023-04-27-gather-simd/</loc>
