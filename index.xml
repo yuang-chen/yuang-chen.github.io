@@ -6,7 +6,19 @@
     <description>Recent content on Yac&#39;s Log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 May 2023 23:33:24 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 May 2023 22:11:07 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Multidimensional Subscript Operator []</title>
+      <link>https://yuang-chen.github.io/posts/2023-05-13-multidim-subscript-operator/</link>
+      <pubDate>Sat, 13 May 2023 22:11:07 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2023-05-13-multidim-subscript-operator/</guid>
+      <description>Finally, C++23 allows overload for the subscript operator [] to be multi-dimensional.
+Before that, we normally either use:
+vector of vector to form a matrix, and access it as mat[i][j] a class containing a big 1-d vector, but behaves as 2-d by overloading the operator (), e.g., mat(i,j) Now, with C++23, we advance the second option (which offers efficient memory access) with better indexing approaching as follow:
+template &amp;lt;typename T, size_t R, size_t C&amp;gt; struct matrix { T&amp;amp; operator[](size_t const r, size_t const c) noexcept { return data_[r * C + c]; } T const&amp;amp; operator[](size_t const r, size_t const c) const noexcept { return data_[r * C + c]; } static constexpr size_t Rows = R; static constexpr size_t Columns = C; private: std::array&amp;lt;T, R * C&amp;gt; data_; }; int main() { matrix&amp;lt;int, 3, 2&amp;gt; m; for(size_t i = 0; i &amp;lt; m.</description>
+    </item>
+    
     <item>
       <title>Bitwise Op</title>
       <link>https://yuang-chen.github.io/posts/2023-05-07-bitwise-op/</link>

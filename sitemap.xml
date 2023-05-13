@@ -2,22 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://yuang-chen.github.io/tags/c&#43;&#43;/</loc>
+    <lastmod>2023-05-13T22:11:07+08:00</lastmod>
+  </url><url>
+    <loc>https://yuang-chen.github.io/tags/c&#43;&#43;23/</loc>
+    <lastmod>2023-05-13T22:11:07+08:00</lastmod>
+  </url><url>
+    <loc>https://yuang-chen.github.io/posts/2023-05-13-multidim-subscript-operator/</loc>
+    <lastmod>2023-05-13T22:11:07+08:00</lastmod>
+  </url><url>
+    <loc>https://yuang-chen.github.io/posts/</loc>
+    <lastmod>2023-05-13T22:11:07+08:00</lastmod>
+  </url><url>
+    <loc>https://yuang-chen.github.io/tags/</loc>
+    <lastmod>2023-05-13T22:11:07+08:00</lastmod>
+  </url><url>
+    <loc>https://yuang-chen.github.io/</loc>
+    <lastmod>2023-05-13T22:11:07+08:00</lastmod>
+  </url><url>
     <loc>https://yuang-chen.github.io/posts/2023-05-07-bitwise-op/</loc>
     <lastmod>2023-05-07T23:33:24+08:00</lastmod>
   </url><url>
-    <loc>https://yuang-chen.github.io/tags/c&#43;&#43;/</loc>
-    <lastmod>2023-05-07T23:33:24+08:00</lastmod>
-  </url><url>
     <loc>https://yuang-chen.github.io/tags/performance/</loc>
-    <lastmod>2023-05-07T23:33:24+08:00</lastmod>
-  </url><url>
-    <loc>https://yuang-chen.github.io/posts/</loc>
-    <lastmod>2023-05-07T23:33:24+08:00</lastmod>
-  </url><url>
-    <loc>https://yuang-chen.github.io/tags/</loc>
-    <lastmod>2023-05-07T23:33:24+08:00</lastmod>
-  </url><url>
-    <loc>https://yuang-chen.github.io/</loc>
     <lastmod>2023-05-07T23:33:24+08:00</lastmod>
   </url><url>
     <loc>https://yuang-chen.github.io/tags/omp/</loc>
