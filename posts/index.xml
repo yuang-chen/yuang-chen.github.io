@@ -6,7 +6,30 @@
     <description>Recent content in Posts on Yac&#39;s Log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 13 May 2023 22:11:07 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 22 Aug 2023 23:18:37 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>User Defined Literals</title>
+      <link>https://yuang-chen.github.io/posts/2023-08-22-user-defined-literals/</link>
+      <pubDate>Tue, 22 Aug 2023 23:18:37 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2023-08-22-user-defined-literals/</guid>
+      <description>User Defined Literals (UDL) produces an object in an interesting way:
+constexpr auto operator&amp;#34;&amp;#34;_f(const char* fmt, size_t) { return[=]&amp;lt;typename... T&amp;gt;(T&amp;amp;&amp;amp;... Args) { return std::vformat(fmt, std::make_format_args(std::forward&amp;lt;T&amp;gt;(Args)...)); }; } auto s = &amp;#34;example {} see {}&amp;#34;_f(&amp;#34;yep&amp;#34;, 1.1); // s = &amp;#34;example yep 1.1&amp;#34; The UDL _f has the same effect of std::format(&amp;quot;example {} see {}&amp;quot;, &amp;quot;yep&amp;quot;, 1.1). Pretty familiar (as libfmt), right?
+Now, let&amp;rsquo;s break the definition of _f down:
+int x = 10; double y = 3.</description>
+    </item>
+    
+    <item>
+      <title>Operator Overload</title>
+      <link>https://yuang-chen.github.io/posts/2023-08-17-operator-overload/</link>
+      <pubDate>Thu, 17 Aug 2023 10:36:19 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2023-08-17-operator-overload/</guid>
+      <description>Reference: here.
+The return of overloaded operator should be a reference, otherwise return-by-code will create a (temporary) rvalue that cannot be passed to the next operation f2 by non-const reference. i.e., rvalue cannot be non-const referenced.
+#include &amp;lt;vector&amp;gt; #include &amp;lt;iostream&amp;gt; #include &amp;lt;functional&amp;gt; template&amp;lt;typename T, typename FN&amp;gt; requires std::invocable&amp;lt;FN, T&amp;amp;&amp;gt; // diff std::invocable? std::vector&amp;lt;T&amp;gt;&amp;amp; operator| (std::vector&amp;lt;T&amp;gt;&amp;amp; vec, FN fn) noexcept { for(auto&amp;amp; e: vec) { fn(e); } return vec; } int main(){ std::vector v{1, 2, 3}; auto f1 = [](int&amp;amp; i) {i *= i; }; std::function f2 {[](const int&amp;amp; i) {std::cout &amp;lt;&amp;lt; i &amp;lt;&amp;lt; &amp;#39; &amp;#39;; } }; v | f1 | f2; }``` </description>
+    </item>
+    
     <item>
       <title>Multidimensional Subscript Operator []</title>
       <link>https://yuang-chen.github.io/posts/2023-05-13-multidim-subscript-operator/</link>
