@@ -6,7 +6,17 @@
     <description>Recent content in Posts on Yac&#39;s Log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Aug 2023 19:56:16 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 27 Aug 2023 11:45:15 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Static Local Member</title>
+      <link>https://yuang-chen.github.io/posts/2023-08-27-static-local-member/</link>
+      <pubDate>Sun, 27 Aug 2023 11:45:15 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2023-08-27-static-local-member/</guid>
+      <description>C++ templates are blueprints and don&amp;rsquo;t represent specific types until they are instantiated with actual types. Once instantiated, the compiler creates a specific version of that template for the provided type. For template classes, each instantiation has its own unique version of the static members, making them distinct for each type the template is instantiated with.
+///////////////////// // Code Block 1 ///////////////////// #include&amp;lt;iostream&amp;gt; class ComponentBase{ protected: // component_type_count is a static variable shared by derived classes static inline size_t component_type_count = 0; }; template&amp;lt;typename T&amp;gt; class Component : public ComponentBase{ public: static size_t component_type_id(){ // ID is the static local variable for a particular type T static size_t ID = component_type_count++; return ID; } }; class A : public Component&amp;lt;A&amp;gt; {}; class B : public Component&amp;lt;B&amp;gt; {}; class C : public Component&amp;lt;C&amp;gt; {}; int main() { std::cout &amp;lt;&amp;lt; A::component_type_id() &amp;lt;&amp;lt; std::endl; // 0 std::cout &amp;lt;&amp;lt; B::component_type_id() &amp;lt;&amp;lt; std::endl; // 1 std::cout &amp;lt;&amp;lt; B::component_type_id() &amp;lt;&amp;lt; std::endl; // 1 std::cout &amp;lt;&amp;lt; A::component_type_id() &amp;lt;&amp;lt; std::endl; // 0 std::cout &amp;lt;&amp;lt; A::component_type_id() &amp;lt;&amp;lt; std::endl; // 0 std::cout &amp;lt;&amp;lt; C::component_type_id() &amp;lt;&amp;lt; std::endl; // 2 } Key Points:</description>
+    </item>
+    
     <item>
       <title>Formatter Specialization</title>
       <link>https://yuang-chen.github.io/posts/2023-08-25-formatter-specialization/</link>
