@@ -6,7 +6,17 @@
     <description>Recent content on Yac&#39;s Log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 27 Aug 2023 11:45:15 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Aug 2023 10:27:54 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Scope Guard</title>
+      <link>https://yuang-chen.github.io/posts/2023-08-29-scope-guard/</link>
+      <pubDate>Tue, 29 Aug 2023 10:27:54 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2023-08-29-scope-guard/</guid>
+      <description>Background Scope Guard is a concept reminiscent of the RAII (Resource Acquisition Is Initialization) principle in C++. The idea is to manage resources (like memory, files, network sockets, etc.) using object lifetime. When the object goes out of scope, its destructor ensures that the resource is cleaned up properly. The scope guard is intended to run a given callable (like a function or lambda) when it is destroyed.
+RAII (Resource Acquisition Is Initialization) is a programming idiom used in C++ where the lifetime of an object is bound to the lifetime of its scope (typically represented by a block of code wrapped in curly braces {}).</description>
+    </item>
+    
     <item>
       <title>Static Local Member</title>
       <link>https://yuang-chen.github.io/posts/2023-08-27-static-local-member/</link>
