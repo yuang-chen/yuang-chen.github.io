@@ -8,12 +8,12 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 01 Sep 2023 11:17:51 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/tags/graph/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>BFS</title>
+      <title>BFS &amp; DFS</title>
       <link>https://yuang-chen.github.io/posts/2023-09-01-bfs/</link>
       <pubDate>Fri, 01 Sep 2023 11:17:51 +0800</pubDate>
       
       <guid>https://yuang-chen.github.io/posts/2023-09-01-bfs/</guid>
-      <description>Iterative BFS. Despite its apparent simplicity, this approach relies heavily on the utilization of various STL containers. std::unordered_map records the parent of each node std::unordered_set checks if a node has been visited std::queue allows the nodes be accessed in the width-first flow std::stack reverses the parents, so the path can be printed in root-to-target order. #include &amp;lt;iostream&amp;gt; #include &amp;lt;vector&amp;gt; #include &amp;lt;unordered_map&amp;gt; #include &amp;lt;unordered_set&amp;gt; #include &amp;lt;queue&amp;gt; #include &amp;lt;stack&amp;gt; std::stack&amp;lt;int&amp;gt; BFS(const int root, const int target, const std::vector&amp;lt;int&amp;gt;&amp;amp; rowPtr, const std::vector&amp;lt;int&amp;gt;&amp;amp; colIdx) { std::unordered_map&amp;lt;int, int&amp;gt; parent; std::unordered_set&amp;lt;int&amp;gt; visited; std::queue&amp;lt;int&amp;gt; nodeQue; std::stack&amp;lt;int&amp;gt; path; bool hasFound = false; nodeQue.</description>
+      <description>Iterative BFS Despite its apparent simplicity, this approach relies heavily on the utilization of various STL containers. std::unordered_map records the parent of each node std::unordered_set checks if a node has been visited std::queue allows the nodes be accessed in the width-first flow; using std::stack for depth-first flow std::stack reverses the parents, so the path can be printed in root-to-target order. #include &amp;lt;iostream&amp;gt; #include &amp;lt;vector&amp;gt; #include &amp;lt;unordered_map&amp;gt; #include &amp;lt;unordered_set&amp;gt; #include &amp;lt;queue&amp;gt; #include &amp;lt;stack&amp;gt; std::stack&amp;lt;int&amp;gt; BFS(const int root, const int target, const std::vector&amp;lt;int&amp;gt;&amp;amp; rowPtr, const std::vector&amp;lt;int&amp;gt;&amp;amp; colIdx) { std::unordered_map&amp;lt;int, int&amp;gt; parent; std::unordered_set&amp;lt;int&amp;gt; visited; std::queue&amp;lt;int&amp;gt; nodeQue; // std::stack&amp;lt;int&amp;gt; nodeStk for DFS std::stack&amp;lt;int&amp;gt; path; bool hasFound = false; nodeQue.</description>
     </item>
     
     <item>

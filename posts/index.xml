@@ -6,14 +6,23 @@
     <description>Recent content in Posts on Yac&#39;s Log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Sep 2023 11:17:51 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 Sep 2023 10:59:59 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>BFS</title>
+      <title>Vector &amp; Array</title>
+      <link>https://yuang-chen.github.io/posts/2023-09-02-vector-array/</link>
+      <pubDate>Sat, 02 Sep 2023 10:59:59 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2023-09-02-vector-array/</guid>
+      <description>Array is allocated in stack memory Vector is allocated in heap memory. Its capacity is “pre-allocated”. #include &amp;lt;iostream&amp;gt; template&amp;lt;typename T&amp;gt; class Vector { private: T* data_; size_t size_; size_t capacity_; public: Vector(): data_(nullptr), size_(0), capacity_(0) {} Vector(size_t n_): size_(n_), capacity_(n_) { data_ = new T[n_]; } ~Vector() { delete [] data_; }; T&amp;amp; operator[] (size_t index) { return data_[index]; } const T&amp;amp; operator[] (size_t index) const { return data_[index]; } size_t size() const { return size_; } void push_back(const T&amp;amp; value) { if(size_ == capacity_) { capacity_ = size_ == 0?</description>
+    </item>
+    
+    <item>
+      <title>BFS &amp; DFS</title>
       <link>https://yuang-chen.github.io/posts/2023-09-01-bfs/</link>
       <pubDate>Fri, 01 Sep 2023 11:17:51 +0800</pubDate>
       
       <guid>https://yuang-chen.github.io/posts/2023-09-01-bfs/</guid>
-      <description>Iterative BFS. Despite its apparent simplicity, this approach relies heavily on the utilization of various STL containers. std::unordered_map records the parent of each node std::unordered_set checks if a node has been visited std::queue allows the nodes be accessed in the width-first flow std::stack reverses the parents, so the path can be printed in root-to-target order. #include &amp;lt;iostream&amp;gt; #include &amp;lt;vector&amp;gt; #include &amp;lt;unordered_map&amp;gt; #include &amp;lt;unordered_set&amp;gt; #include &amp;lt;queue&amp;gt; #include &amp;lt;stack&amp;gt; std::stack&amp;lt;int&amp;gt; BFS(const int root, const int target, const std::vector&amp;lt;int&amp;gt;&amp;amp; rowPtr, const std::vector&amp;lt;int&amp;gt;&amp;amp; colIdx) { std::unordered_map&amp;lt;int, int&amp;gt; parent; std::unordered_set&amp;lt;int&amp;gt; visited; std::queue&amp;lt;int&amp;gt; nodeQue; std::stack&amp;lt;int&amp;gt; path; bool hasFound = false; nodeQue.</description>
+      <description>Iterative BFS Despite its apparent simplicity, this approach relies heavily on the utilization of various STL containers. std::unordered_map records the parent of each node std::unordered_set checks if a node has been visited std::queue allows the nodes be accessed in the width-first flow; using std::stack for depth-first flow std::stack reverses the parents, so the path can be printed in root-to-target order. #include &amp;lt;iostream&amp;gt; #include &amp;lt;vector&amp;gt; #include &amp;lt;unordered_map&amp;gt; #include &amp;lt;unordered_set&amp;gt; #include &amp;lt;queue&amp;gt; #include &amp;lt;stack&amp;gt; std::stack&amp;lt;int&amp;gt; BFS(const int root, const int target, const std::vector&amp;lt;int&amp;gt;&amp;amp; rowPtr, const std::vector&amp;lt;int&amp;gt;&amp;amp; colIdx) { std::unordered_map&amp;lt;int, int&amp;gt; parent; std::unordered_set&amp;lt;int&amp;gt; visited; std::queue&amp;lt;int&amp;gt; nodeQue; // std::stack&amp;lt;int&amp;gt; nodeStk for DFS std::stack&amp;lt;int&amp;gt; path; bool hasFound = false; nodeQue.</description>
     </item>
     
     <item>
@@ -33,8 +42,7 @@ Breadth-First Search (BFS) Single-Source Shortest Paths (SSSP) Connected Compone
       <pubDate>Wed, 30 Aug 2023 14:13:22 +0800</pubDate>
       
       <guid>https://yuang-chen.github.io/posts/2023-08-30-stl-containers/</guid>
-      <description>In my HPC-oriented programming, my go-to choices are typically limited to arrays and vectors because of their memory efficiency. Linked lists and hash maps, being non-contiguous in memory space, rarely find their way into my toolkit. These containers draw upon many classic algorithmic designs. Lately, as I&amp;rsquo;ve been revisiting fundamental graph algorithms, I&amp;rsquo;ve also decided to take on the tasks of re-implementing these containers.
-I mainly
+      <description>In my HPC-oriented programming, my go-to choices are typically limited to arrays and vectors because of their memory efficiency. Linked lists and hash maps, being non-contiguous in memory space, rarely find their way into my toolkit. These containers draw upon many classic algorithmic designs. Lately, as I&amp;rsquo;ve been revisiting fundamental graph algorithms, I&amp;rsquo;ve also decided to take on the tasks of re-implementing these containers (incompletely).
 Sequence Containers data structures which can be accessed sequentially.</description>
     </item>
     
