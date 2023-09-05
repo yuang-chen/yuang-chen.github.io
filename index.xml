@@ -42,8 +42,8 @@ Breadth-First Search (BFS) Single-Source Shortest Paths (SSSP) Connected Compone
       <pubDate>Wed, 30 Aug 2023 14:13:22 +0800</pubDate>
       
       <guid>https://yuang-chen.github.io/posts/2023-08-30-stl-containers/</guid>
-      <description>In my HPC-oriented programming, my go-to choices are typically limited to arrays and vectors because of their memory efficiency. Linked lists and hash maps, being non-contiguous in memory space, rarely find their way into my toolkit. These containers draw upon many classic algorithmic designs. Lately, as I&amp;rsquo;ve been revisiting fundamental graph algorithms, I&amp;rsquo;ve also decided to take on the tasks of re-implementing these containers (incompletely).
-Sequence Containers data structures which can be accessed sequentially.</description>
+      <description>In my HPC-oriented programming, my go-to choices are typically limited to arrays and vectors because of their memory efficiency. Linked lists and hash maps, being non-contiguous in memory space, rarely find their way into my toolkit. These containers draw upon many classic algorithmic designs. Lately, as I&amp;rsquo;ve been revisiting fundamental graph algorithms, I&amp;rsquo;ve also decided to take on the tasks of re-implementing these containers in a simplified illustration.
+Sequence Containers Data structures which can be accessed sequentially.</description>
     </item>
     
     <item>
