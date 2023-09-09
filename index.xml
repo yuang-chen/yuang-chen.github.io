@@ -6,7 +6,16 @@
     <description>Recent content on Yac&#39;s Log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Sep 2023 21:53:31 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Sep 2023 13:36:19 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SSSP</title>
+      <link>https://yuang-chen.github.io/posts/2023-09-09-sssp/</link>
+      <pubDate>Sat, 09 Sep 2023 13:36:19 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2023-09-09-sssp/</guid>
+      <description>BellmanFord BellmanFord: Perform numVertices - 1 iterations of graph traversal to find the shortest path an additional iteration checks if negative cycles exist $O(|V| * |E|)$ time complexity Code #include &amp;lt;iostream&amp;gt; #include &amp;lt;queue&amp;gt; #include &amp;lt;vector&amp;gt; std::vector&amp;lt;int&amp;gt; bellmanFord(const int root, const std::vector&amp;lt;int&amp;gt;&amp;amp; rowPtr, const std::vector&amp;lt;int&amp;gt;&amp;amp; colIdx, const std::vector&amp;lt;float&amp;gt;&amp;amp; weight) { const auto numVertices = rowPtr.size() - 1; std::vector&amp;lt;float&amp;gt; distance(numVertices, std::numeric_limits&amp;lt;float&amp;gt;::max()); std::vector&amp;lt;int&amp;gt; parent(numVertices, -1); distance[root] = 0.0f; // The shortest path between any two vertices in a graph can contain at most numVertices - 1 edges.</description>
+    </item>
+    
     <item>
       <title>Deque</title>
       <link>https://yuang-chen.github.io/posts/2023-09-04-deque/</link>
