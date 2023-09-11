@@ -6,7 +6,17 @@
     <description>Recent content in Posts on Yac&#39;s Log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 09 Sep 2023 13:36:19 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Sep 2023 16:33:34 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>List</title>
+      <link>https://yuang-chen.github.io/posts/2023-09-11-list/</link>
+      <pubDate>Mon, 11 Sep 2023 16:33:34 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2023-09-11-list/</guid>
+      <description>Description STL indeed offers std::list and std::forward_list, which are essentially double-linked list and single-linked list, respectively. std::list provides operations like push_back/front, pop_back/front with a time complexity of O(1), and supports bidirectional iterators. On the other hand, std::forward_list only allows fronting operations with O(1) and insert/erase_after for backing operations, which have a time complexity of O(n); also, it only supports forward iterators.
+A valuable feature of lists is that they prohibit iterator invalidation compared to some other data structures.</description>
+    </item>
+    
     <item>
       <title>SSSP</title>
       <link>https://yuang-chen.github.io/posts/2023-09-09-sssp/</link>
