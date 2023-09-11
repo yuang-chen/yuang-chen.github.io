@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>STL on Yac&#39;s Log</title>
+    <link>https://yuang-chen.github.io/tags/stl/</link>
+    <description>Recent content in STL on Yac&#39;s Log</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 11 Sep 2023 16:33:34 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/tags/stl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>List</title>
+      <link>https://yuang-chen.github.io/posts/2023-09-11-list/</link>
+      <pubDate>Mon, 11 Sep 2023 16:33:34 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2023-09-11-list/</guid>
+      <description>Description STL indeed offers std::list and std::forward_list, which are essentially double-linked list and single-linked list, respectively. std::list provides operations like push_back/front, pop_back/front with a time complexity of O(1), and supports bidirectional iterators. On the other hand, std::forward_list only allows fronting operations with O(1) and insert/erase_after for backing operations, which have a time complexity of O(n); also, it only supports forward iterators.
+A valuable feature of lists is that they prohibit iterator invalidation compared to some other data structures.</description>
+    </item>
+    
+    <item>
+      <title>Deque</title>
+      <link>https://yuang-chen.github.io/posts/2023-09-04-deque/</link>
+      <pubDate>Mon, 04 Sep 2023 21:53:31 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2023-09-04-deque/</guid>
+      <description>Description std::deque extends the interfaces of std::vector with push_front, pop_front, etc., such that elements can be inserted or removed at the end or beginning at constant time.
+I&amp;rsquo;ve hardly ever incorporated std::deque in my own coding projects, and it&amp;rsquo;s a rarity in other people&amp;rsquo;s work as well.
+Code std::deque is essentially a sequence of individually allocated fixed-size arrays. The real challenge lies in the bookkeeping. Four variables are relied on to keep track of data:</description>
+    </item>
+    
+    <item>
+      <title>STL Containers</title>
+      <link>https://yuang-chen.github.io/posts/2023-08-30-stl-containers/</link>
+      <pubDate>Wed, 30 Aug 2023 14:13:22 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2023-08-30-stl-containers/</guid>
+      <description>In my HPC-oriented programming, my go-to choices are typically limited to arrays and vectors because of their memory efficiency. Linked lists and hash maps, being non-contiguous in memory space, rarely find their way into my toolkit. These containers draw upon many classic algorithmic designs. Lately, as I&amp;rsquo;ve been revisiting fundamental graph algorithms, I&amp;rsquo;ve also decided to take on the tasks of re-implementing these containers in a simplified illustration.
+They are:</description>
+    </item>
+    
+  </channel>
+</rss>
