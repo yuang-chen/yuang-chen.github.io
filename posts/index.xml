@@ -6,7 +6,17 @@
     <description>Recent content in Posts on Yac&#39;s Log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 11 Sep 2023 16:33:34 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 Sep 2023 12:32:15 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Connected Components</title>
+      <link>https://yuang-chen.github.io/posts/2023-09-12-connected-components/</link>
+      <pubDate>Tue, 12 Sep 2023 12:32:15 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2023-09-12-connected-components/</guid>
+      <description>Description Three different variants of Connected Component (CC) algorithms are implemented, and the comparisons are provided as follows:
+Algorithm Time Complexity Parallelism Techniques DFS $(O(V + E))$ Poor Recursive Traversal Union-Find $(O(V + E \alpha(V)))$ Poor Path Compression, Union by Rank Shiloach-Vishkin $(O(\log^* V))$ Highly Parallel Pointer Jumping Here, $( \log^* )$ is the iterated logarithm, which is extremely slow-growing, making the algorithm very fast. $( \alpha(V) )$ is the inverse Ackermann function, practically a constant for all feasible input sizes.</description>
+    </item>
+    
     <item>
       <title>List</title>
       <link>https://yuang-chen.github.io/posts/2023-09-11-list/</link>
@@ -23,7 +33,8 @@ A valuable feature of lists is that they prohibit iterator invalidation compared
       <pubDate>Sat, 09 Sep 2023 13:36:19 +0800</pubDate>
       
       <guid>https://yuang-chen.github.io/posts/2023-09-09-sssp/</guid>
-      <description>BellmanFord BellmanFord: Perform numVertices - 1 iterations of graph traversal to find the shortest path an additional iteration checks if negative cycles exist $O(|V| * |E|)$ time complexity Code #include &amp;lt;iostream&amp;gt; #include &amp;lt;queue&amp;gt; #include &amp;lt;vector&amp;gt; std::vector&amp;lt;int&amp;gt; bellmanFord(const int root, const std::vector&amp;lt;int&amp;gt;&amp;amp; rowPtr, const std::vector&amp;lt;int&amp;gt;&amp;amp; colIdx, const std::vector&amp;lt;float&amp;gt;&amp;amp; weight) { const auto numVertices = rowPtr.size() - 1; std::vector&amp;lt;float&amp;gt; distance(numVertices, std::numeric_limits&amp;lt;float&amp;gt;::max()); std::vector&amp;lt;int&amp;gt; parent(numVertices, -1); distance[root] = 0.0f; // The shortest path between any two vertices in a graph can contain at most numVertices - 1 edges.</description>
+      <description>Two variants of Single-Source Shortest Path (SSSP) have been implemented as follows. Bellman-Ford is the one that is widely implemented in parallel graph frameworks. This is because the use of a heap in Dijkstra&amp;rsquo;s algorithm can limit the parallelism of the code.
+Criteria Dijkstra&amp;rsquo;s Algorithm Bellman-Ford Algorithm Type Greedy Dynamic Programming Usage Positive weights Negative weights OK Time Complexity O((V + E) * log(V)) O(V * E) Negative Cycles No Yes (Detectable) Data Structures Priority Queue None (Arrays) Initialization Start node: 0, rest ∞ Start node: 0, rest ∞ Relaxation Decrease Key Relaxation BellmanFord BellmanFord: Perform numVertices - 1 iterations of graph traversal to find the shortest path an additional iteration checks if negative cycles exist $O(|V| * |E|)$ time complexity Code #include &amp;lt;iostream&amp;gt; #include &amp;lt;queue&amp;gt; #include &amp;lt;vector&amp;gt; std::vector&amp;lt;int&amp;gt; bellmanFord(const int root, const std::vector&amp;lt;int&amp;gt;&amp;amp; rowPtr, const std::vector&amp;lt;int&amp;gt;&amp;amp; colIdx, const std::vector&amp;lt;float&amp;gt;&amp;amp; weight) { const auto numVertices = rowPtr.</description>
     </item>
     
     <item>
