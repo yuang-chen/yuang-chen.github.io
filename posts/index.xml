@@ -6,7 +6,26 @@
     <description>Recent content in Posts on Yac&#39;s Log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 12 Sep 2023 12:32:15 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 23 Sep 2023 17:09:51 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Triangles Counting</title>
+      <link>https://yuang-chen.github.io/posts/2023-09-23-triangle-counting/</link>
+      <pubDate>Sat, 23 Sep 2023 17:09:51 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2023-09-23-triangle-counting/</guid>
+      <description>count how many triangles can be formed inside the graph undirected graph, and each triangle would be counted for three times, once per node. O(n^3) #include &amp;lt;iostream&amp;gt; #include &amp;lt;vector&amp;gt; // Reference: https://github.com/georgegito/vertexwise-triangle-counting/blob/master/src/v3/v3_seq.cpp // allow for parallelism auto bfs_tc(const std::vector&amp;lt;int&amp;gt;&amp;amp; rowPtr, const std::vector&amp;lt;int&amp;gt;&amp;amp; colIdx) { int numTriangles = 0; const auto numVertices = rowPtr.size() - 1; // check if two nodes have an edge between them with binary search (require sorted colIdx) auto intersect = [&amp;amp;](int first, int second) -&amp;gt; bool { // std::find is O(N), assuming the iterator is a forward iterator // auto first_begin = colIdx.</description>
+    </item>
+    
+    <item>
+      <title>2023 09 18 Betweenness Centrality</title>
+      <link>https://yuang-chen.github.io/posts/2023-09-18-betweenness-centrality/</link>
+      <pubDate>Mon, 18 Sep 2023 17:12:24 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2023-09-18-betweenness-centrality/</guid>
+      <description>The betweenness centrality for each vertex is the number of these shortest paths that pass through the vertex.
+perform BFS (or SSSP if weighted graphs) for each vertex keep a stack of path for backtracking, i.e., traversing the graph in reverse BFS order #include &amp;lt;iostream&amp;gt; #include &amp;lt;queue&amp;gt; #include &amp;lt;stack&amp;gt; #include &amp;lt;vector&amp;gt; auto brandes(const std::vector&amp;lt;int&amp;gt;&amp;amp; rowPtr, const std::vector&amp;lt;int&amp;gt;&amp;amp; colIdx) { const auto numVertices = rowPtr.size() - 1; std::vector&amp;lt;float&amp;gt; betweenness(numVertices, 0.0f); //For each vertex s, perform a BFS to establish levels and predecessors //!</description>
+    </item>
+    
     <item>
       <title>Connected Components</title>
       <link>https://yuang-chen.github.io/posts/2023-09-12-connected-components/</link>
@@ -74,7 +93,7 @@ Code std::deque is essentially a sequence of individually allocated fixed-size a
       <guid>https://yuang-chen.github.io/posts/2023-08-31-graph-algorithms/</guid>
       <description>Considering myself a researcher in graph algorithms, I&amp;rsquo;ve come to the surprising realization that my grasp of these algorithms is not as solid as I thought. Hence, this blog series aims to document my exploration of various graph algorithms I&amp;rsquo;ve encountered thus far, regardless of their complexity.
 The algorithms are selected from the parallel graph frameworks GAP and GBBS, focusing on their single-threaded versions to assess their complexity.
-Breadth-First Search (BFS) Single-Source Shortest Paths (SSSP) Connected Components (CC) Betweenness Centrality (BC) Triangle Counting (TC) * </description>
+Breadth-First Search (BFS) Single-Source Shortest Paths (SSSP) Connected Components (CC) Betweenness Centrality (BC) Triangle Counting (TC) </description>
     </item>
     
     <item>
