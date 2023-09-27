@@ -6,7 +6,17 @@
     <description>Recent content in STL on Yac&#39;s Log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 11 Sep 2023 16:33:34 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/tags/stl/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 27 Sep 2023 18:42:56 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/tags/stl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2023 09 27 Unordered Set</title>
+      <link>https://yuang-chen.github.io/posts/2023-09-27-unordered-set/</link>
+      <pubDate>Wed, 27 Sep 2023 18:42:56 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2023-09-27-unordered-set/</guid>
+      <description>Description The implementation of std::unordered_set and std::unordered_map involves hashing and the use of buckets. The bucket is simply a vector of (singly) linked list. Here&amp;rsquo;s the procedure for locating (finding, inserting, or erasing) an element:
+Compute the hash value of the key. Determine the index of the target bucket using the modulo operator. Bucket[idx] represents the first element of the linked list. Traverse through the linked list to locate the value.</description>
+    </item>
+    
     <item>
       <title>List</title>
       <link>https://yuang-chen.github.io/posts/2023-09-11-list/</link>
@@ -26,6 +36,15 @@ A valuable feature of lists is that they prohibit iterator invalidation compared
       <description>Description std::deque extends the interfaces of std::vector with push_front, pop_front, etc., such that elements can be inserted or removed at the end or beginning at constant time.
 I&amp;rsquo;ve hardly ever incorporated std::deque in my own coding projects, and it&amp;rsquo;s a rarity in other people&amp;rsquo;s work as well.
 Code std::deque is essentially a sequence of individually allocated fixed-size arrays. The real challenge lies in the bookkeeping. Four variables are relied on to keep track of data:</description>
+    </item>
+    
+    <item>
+      <title>Vector &amp; Array</title>
+      <link>https://yuang-chen.github.io/posts/2023-09-02-vector-array/</link>
+      <pubDate>Sat, 02 Sep 2023 10:59:59 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2023-09-02-vector-array/</guid>
+      <description>Array is allocated in stack memory Vector is allocated in heap memory. Its capacity is “pre-allocated”. #include &amp;lt;iostream&amp;gt; template&amp;lt;typename T&amp;gt; class Vector { private: T* data_; size_t size_; size_t capacity_; public: Vector(): data_(nullptr), size_(0), capacity_(0) {} Vector(size_t n_): size_(n_), capacity_(n_) { data_ = new T[n_]; } ~Vector() { delete [] data_; }; T&amp;amp; operator[] (size_t index) { return data_[index]; } const T&amp;amp; operator[] (size_t index) const { return data_[index]; } size_t size() const { return size_; } void push_back(const T&amp;amp; value) { if(size_ == capacity_) { capacity_ = size_ == 0?</description>
     </item>
     
     <item>

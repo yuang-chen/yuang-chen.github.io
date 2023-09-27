@@ -6,17 +6,15 @@
     <description>Recent content in Posts on Yac&#39;s Log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 Sep 2023 00:09:48 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 27 Sep 2023 18:42:56 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Set &amp; Map</title>
-      <link>https://yuang-chen.github.io/posts/2023-09-26-set-map/</link>
-      <pubDate>Tue, 26 Sep 2023 00:09:48 +0800</pubDate>
+      <title>2023 09 27 Unordered Set</title>
+      <link>https://yuang-chen.github.io/posts/2023-09-27-unordered-set/</link>
+      <pubDate>Wed, 27 Sep 2023 18:42:56 +0800</pubDate>
       
-      <guid>https://yuang-chen.github.io/posts/2023-09-26-set-map/</guid>
-      <description>Description Both std::set and std::map are underpinned by red-black trees (RBT). RBTs are self-balancing binary trees, albeit not perfectly balanced. In this structure, it&amp;rsquo;s ensured that the values (for std::set) or keys (for std::map) adhere to the following condition: node→left &amp;lt; node &amp;lt; node→right. Consequently, the RBT are considered ordered, so std::set and std::map are called ordered containers.
-RBT are characterized as follows:
-Property
-A node is either red or black.</description>
+      <guid>https://yuang-chen.github.io/posts/2023-09-27-unordered-set/</guid>
+      <description>Description The implementation of std::unordered_set and std::unordered_map involves hashing and the use of buckets. The bucket is simply a vector of (singly) linked list. Here&amp;rsquo;s the procedure for locating (finding, inserting, or erasing) an element:
+Compute the hash value of the key. Determine the index of the target bucket using the modulo operator. Bucket[idx] represents the first element of the linked list. Traverse through the linked list to locate the value.</description>
     </item>
     
     <item>
