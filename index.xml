@@ -6,7 +6,16 @@
     <description>Recent content on Yac&#39;s Log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 Sep 2023 18:42:56 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 29 Sep 2023 10:00:07 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Minimum Spanning Tree</title>
+      <link>https://yuang-chen.github.io/posts/2023-09-29-mst/</link>
+      <pubDate>Fri, 29 Sep 2023 10:00:07 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2023-09-29-mst/</guid>
+      <description>Description A Minimum Spanning Tree (MST) of a weighted, connected, undirected graph is a tree that spans all the vertices in the graph and has the minimum possible total edge weight among all the trees that can be created from the graph. In simpler terms, it&amp;rsquo;s a subgraph that includes all the vertices, is a tree (meaning it has no cycles), and the sum of its edge weights is as small as possible.</description>
+    </item>
+    
     <item>
       <title>Unordered Set</title>
       <link>https://yuang-chen.github.io/posts/2023-09-27-unordered-set/</link>
@@ -115,7 +124,7 @@ Code std::deque is essentially a sequence of individually allocated fixed-size a
       <guid>https://yuang-chen.github.io/posts/2023-08-31-graph-algorithms/</guid>
       <description>Considering myself a researcher in graph algorithms, I&amp;rsquo;ve come to the surprising realization that my grasp of these algorithms is not as solid as I thought. Hence, this blog series aims to document my exploration of various graph algorithms I&amp;rsquo;ve encountered thus far, regardless of their complexity.
 The algorithms are selected from the parallel graph frameworks GAP and GBBS, focusing on their single-threaded versions to assess their complexity.
-Breadth-First Search (BFS) Single-Source Shortest Paths (SSSP) Connected Components (CC) Betweenness Centrality (BC) Triangle Counting (TC) </description>
+Breadth-First Search (BFS) Single-Source Shortest Paths (SSSP) Connected Components (CC) Betweenness Centrality (BC) Triangle Counting (TC) Minimum Spanning Tree Strongly Connected Components </description>
     </item>
     
     <item>
