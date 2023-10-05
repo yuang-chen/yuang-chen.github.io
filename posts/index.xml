@@ -6,7 +6,26 @@
     <description>Recent content in Posts on Yac&#39;s Log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 Sep 2023 18:42:56 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Oct 2023 10:30:44 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Queue &amp; Stack</title>
+      <link>https://yuang-chen.github.io/posts/2023-10-05-queue-stack/</link>
+      <pubDate>Thu, 05 Oct 2023 10:30:44 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2023-10-05-queue-stack/</guid>
+      <description>Description Both std::queue and std::stack are container adaptors that rely on an underlying container to provide specific functionality. For example:
+std::queue implements a First-In-First-Out (FIFO) flow, making it efficient to remove the front element. It can use std::deque (by default) or std::list as the underlying container. std::stack follows a Last-In-First-Out (LIFO) flow, where the back element needs efficient modification. By default, it uses std::deque but can also be based on std::list or std::vector.</description>
+    </item>
+    
+    <item>
+      <title>Minimum Spanning Tree</title>
+      <link>https://yuang-chen.github.io/posts/2023-09-29-minimum-spanning-tree/</link>
+      <pubDate>Fri, 29 Sep 2023 10:34:39 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2023-09-29-minimum-spanning-tree/</guid>
+      <description>Description A Minimum Spanning Tree (MST) of a weighted, connected, undirected graph is a tree that spans all the vertices in the graph and has the minimum possible total edge weight among all the trees that can be created from the graph. In simpler terms, it&amp;rsquo;s a subgraph that includes all the vertices, is a tree (meaning it has no cycles), and the sum of its edge weights is as small as possible.</description>
+    </item>
+    
     <item>
       <title>Unordered Set</title>
       <link>https://yuang-chen.github.io/posts/2023-09-27-unordered-set/</link>
@@ -35,7 +54,7 @@ A node is either red or black.</description>
       <pubDate>Sat, 23 Sep 2023 17:09:51 +0800</pubDate>
       
       <guid>https://yuang-chen.github.io/posts/2023-09-23-triangle-counting/</guid>
-      <description>count how many triangles can be formed inside the graph undirected graph, and each triangle would be counted for three times, once per node. O(n^3) #include &amp;lt;iostream&amp;gt; #include &amp;lt;vector&amp;gt; // Reference: https://github.com/georgegito/vertexwise-triangle-counting/blob/master/src/v3/v3_seq.cpp // allow for parallelism auto bfs_tc(const std::vector&amp;lt;int&amp;gt;&amp;amp; rowPtr, const std::vector&amp;lt;int&amp;gt;&amp;amp; colIdx) { int numTriangles = 0; const auto numVertices = rowPtr.size() - 1; // check if two nodes have an edge between them with binary search (require sorted colIdx) auto intersect = [&amp;amp;](int first, int second) -&amp;gt; bool { // std::find is O(N), assuming the iterator is a forward iterator // auto first_begin = colIdx.</description>
+      <description>count how many triangles can be formed inside the graph undirected graph, and each triangle would be counted for three times, once per node. $O(n^3)$ #include &amp;lt;iostream&amp;gt; #include &amp;lt;vector&amp;gt; // Reference: https://github.com/georgegito/vertexwise-triangle-counting/blob/master/src/v3/v3_seq.cpp // allow for parallelism auto bfs_tc(const std::vector&amp;lt;int&amp;gt;&amp;amp; rowPtr, const std::vector&amp;lt;int&amp;gt;&amp;amp; colIdx) { int numTriangles = 0; const auto numVertices = rowPtr.size() - 1; // check if two nodes have an edge between them with binary search (require sorted colIdx) auto intersect = [&amp;amp;](int first, int second) -&amp;gt; bool { // std::find is O(N), assuming the iterator is a forward iterator // auto first_begin = colIdx.</description>
     </item>
     
     <item>
@@ -115,7 +134,7 @@ Code std::deque is essentially a sequence of individually allocated fixed-size a
       <guid>https://yuang-chen.github.io/posts/2023-08-31-graph-algorithms/</guid>
       <description>Considering myself a researcher in graph algorithms, I&amp;rsquo;ve come to the surprising realization that my grasp of these algorithms is not as solid as I thought. Hence, this blog series aims to document my exploration of various graph algorithms I&amp;rsquo;ve encountered thus far, regardless of their complexity.
 The algorithms are selected from the parallel graph frameworks GAP and GBBS, focusing on their single-threaded versions to assess their complexity.
-Breadth-First Search (BFS) Single-Source Shortest Paths (SSSP) Connected Components (CC) Betweenness Centrality (BC) Triangle Counting (TC) </description>
+Breadth-First Search (BFS) Single-Source Shortest Paths (SSSP) Connected Components (CC) Betweenness Centrality (BC) Triangle Counting (TC) Minimum Spanning Tree (MST) Strongly Connected Components </description>
     </item>
     
     <item>
