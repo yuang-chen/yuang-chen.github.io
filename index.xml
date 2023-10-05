@@ -55,6 +55,7 @@ A node is either red or black.</description>
       
       <guid>https://yuang-chen.github.io/posts/2023-09-23-triangle-counting/</guid>
       <description>count how many triangles can be formed inside the graph undirected graph, and each triangle would be counted for three times, once per node. $O(n^3)$ #include &amp;lt;iostream&amp;gt; #include &amp;lt;vector&amp;gt; // Reference: https://github.com/georgegito/vertexwise-triangle-counting/blob/master/src/v3/v3_seq.cpp // allow for parallelism auto bfs_tc(const std::vector&amp;lt;int&amp;gt;&amp;amp; rowPtr, const std::vector&amp;lt;int&amp;gt;&amp;amp; colIdx) { int numTriangles = 0; const auto numVertices = rowPtr.size() - 1; // check if two nodes have an edge between them with binary search (require sorted colIdx) auto intersect = [&amp;amp;](int first, int second) -&amp;gt; bool { // std::find is O(N), assuming the iterator is a forward iterator // auto first_begin = colIdx.</description>
+      <description>count how many triangles can be formed inside the graph undirected graph, and each triangle would be counted for three times, once per node. $O(n^3)$ #include &amp;lt;iostream&amp;gt; #include &amp;lt;vector&amp;gt; // Reference: https://github.com/georgegito/vertexwise-triangle-counting/blob/master/src/v3/v3_seq.cpp // allow for parallelism auto bfs_tc(const std::vector&amp;lt;int&amp;gt;&amp;amp; rowPtr, const std::vector&amp;lt;int&amp;gt;&amp;amp; colIdx) { int numTriangles = 0; const auto numVertices = rowPtr.size() - 1; // check if two nodes have an edge between them with binary search (require sorted colIdx) auto intersect = [&amp;amp;](int first, int second) -&amp;gt; bool { // std::find is O(N), assuming the iterator is a forward iterator // auto first_begin = colIdx.</description>
     </item>
     
     <item>
@@ -134,6 +135,7 @@ Code std::deque is essentially a sequence of individually allocated fixed-size a
       <guid>https://yuang-chen.github.io/posts/2023-08-31-graph-algorithms/</guid>
       <description>Considering myself a researcher in graph algorithms, I&amp;rsquo;ve come to the surprising realization that my grasp of these algorithms is not as solid as I thought. Hence, this blog series aims to document my exploration of various graph algorithms I&amp;rsquo;ve encountered thus far, regardless of their complexity.
 The algorithms are selected from the parallel graph frameworks GAP and GBBS, focusing on their single-threaded versions to assess their complexity.
+Breadth-First Search (BFS) Single-Source Shortest Paths (SSSP) Connected Components (CC) Betweenness Centrality (BC) Triangle Counting (TC) Minimum Spanning Tree (MST) Strongly Connected Components </description>
 Breadth-First Search (BFS) Single-Source Shortest Paths (SSSP) Connected Components (CC) Betweenness Centrality (BC) Triangle Counting (TC) Minimum Spanning Tree (MST) Strongly Connected Components </description>
     </item>
     
