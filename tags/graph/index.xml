@@ -6,17 +6,24 @@
     <description>Recent content in Graph on Yac&#39;s Log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 Sep 2023 00:09:48 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/tags/graph/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 Oct 2023 11:54:29 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/tags/graph/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Set &amp; Map</title>
-      <link>https://yuang-chen.github.io/posts/2023-09-26-set-map/</link>
-      <pubDate>Tue, 26 Sep 2023 00:09:48 +0800</pubDate>
+      <title>Strongly Connected Components</title>
+      <link>https://yuang-chen.github.io/posts/2023-10-12-strongly-connected-components/</link>
+      <pubDate>Thu, 12 Oct 2023 11:54:29 +0800</pubDate>
       
-      <guid>https://yuang-chen.github.io/posts/2023-09-26-set-map/</guid>
-      <description>Description Both std::set and std::map are underpinned by red-black trees (RBT). RBTs are self-balancing binary trees, albeit not perfectly balanced. In this structure, it&amp;rsquo;s ensured that the values (for std::set) or keys (for std::map) adhere to the following condition: node→left &amp;lt; node &amp;lt; node→right. Consequently, the RBT are considered ordered, so std::set and std::map are called ordered containers.
-RBT are characterized as follows:
-Property
-A node is either red or black.</description>
+      <guid>https://yuang-chen.github.io/posts/2023-10-12-strongly-connected-components/</guid>
+      <description>Description Kosaraju&amp;rsquo;s Algorithm: Run 1st DFS to get finishing times of each vertex (i.e., postordering of DFS). [Backtracking] Run 2nd DFS on the transposed graph, starting with the visited vertices in Reverse Post-Order Each DFS tree in step 2 is an SCC. Reverse Post-Order ensures that, in the second pass, every vertex is processed before any of its dependent vertices.
+Tarjan&amp;rsquo;s Algorithm: Run DFS while maintaining a stack and low-link values.</description>
+    </item>
+    
+    <item>
+      <title>Minimum Spanning Tree</title>
+      <link>https://yuang-chen.github.io/posts/2023-09-29-minimum-spanning-tree/</link>
+      <pubDate>Fri, 29 Sep 2023 10:34:39 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2023-09-29-minimum-spanning-tree/</guid>
+      <description>Description A Minimum Spanning Tree (MST) of a weighted, connected, undirected graph is a tree that spans all the vertices in the graph and has the minimum possible total edge weight among all the trees that can be created from the graph. In simpler terms, it&amp;rsquo;s a subgraph that includes all the vertices, is a tree (meaning it has no cycles), and the sum of its edge weights is as small as possible.</description>
     </item>
     
     <item>
@@ -36,6 +43,16 @@ A node is either red or black.</description>
       <guid>https://yuang-chen.github.io/posts/2023-09-18-betweenness-centrality/</guid>
       <description>The betweenness centrality for each vertex is the number of these shortest paths that pass through the vertex.
 perform BFS (or SSSP if weighted graphs) for each vertex keep a stack of path for backtracking, i.e., traversing the graph in reverse BFS order #include &amp;lt;iostream&amp;gt; #include &amp;lt;queue&amp;gt; #include &amp;lt;stack&amp;gt; #include &amp;lt;vector&amp;gt; auto brandes(const std::vector&amp;lt;int&amp;gt;&amp;amp; rowPtr, const std::vector&amp;lt;int&amp;gt;&amp;amp; colIdx) { const auto numVertices = rowPtr.size() - 1; std::vector&amp;lt;float&amp;gt; betweenness(numVertices, 0.0f); //For each vertex s, perform a BFS to establish levels and predecessors //!</description>
+    </item>
+    
+    <item>
+      <title>Connected Components</title>
+      <link>https://yuang-chen.github.io/posts/2023-09-12-connected-components/</link>
+      <pubDate>Tue, 12 Sep 2023 12:32:15 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2023-09-12-connected-components/</guid>
+      <description>Description Three different variants of Connected Component (CC) algorithms are implemented, and the comparisons are provided as follows:
+Algorithm Time Complexity Parallelism Techniques DFS $(O(V + E))$ Poor Recursive Traversal Union-Find $(O(V + E \alpha(V)))$ Poor Path Compression, Union by Rank Shiloach-Vishkin $(O(\log^* V))$ Highly Parallel Pointer Jumping Here, $( \log^* )$ is the iterated logarithm, which is extremely slow-growing, making the algorithm very fast. $( \alpha(V) )$ is the inverse Ackermann function, practically a constant for all feasible input sizes.</description>
     </item>
     
     <item>
