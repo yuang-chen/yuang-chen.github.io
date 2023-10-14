@@ -6,15 +6,26 @@
     <description>Recent content on Yac&#39;s Log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Oct 2023 11:54:29 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 14 Oct 2023 12:17:12 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Priority Queue</title>
+      <link>https://yuang-chen.github.io/posts/2023-10-14-priority-queue/</link>
+      <pubDate>Sat, 14 Oct 2023 12:17:12 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2023-10-14-priority-queue/</guid>
+      <description>The motivation behind re-implementing the standard containers is the Priority Queue (or namely Max Heap). It combines algorithms and fundamental data structures to create a sophisticated yet highly efficient data structure. My current focus on reinventing these containers has temporarily paused here. Similar containers, like flat_set, are slated for release in C++23. When they become available, I plan to continue this series by attempting to re-implement them.
+Description A priority queue is a container adapter offering constant time access to the largest (by default) element, albeit at the cost of logarithmic time insertion and extraction.</description>
+    </item>
+    
     <item>
       <title>Strongly Connected Components</title>
       <link>https://yuang-chen.github.io/posts/2023-10-12-strongly-connected-components/</link>
       <pubDate>Thu, 12 Oct 2023 11:54:29 +0800</pubDate>
       
       <guid>https://yuang-chen.github.io/posts/2023-10-12-strongly-connected-components/</guid>
-      <description>Description Kosaraju&amp;rsquo;s Algorithm: Run 1st DFS to get finishing times of each vertex (i.e., postordering of DFS). [Backtracking] Run 2nd DFS on the transposed graph, starting with the visited vertices in Reverse Post-Order Each DFS tree in step 2 is an SCC. Reverse Post-Order ensures that, in the second pass, every vertex is processed before any of its dependent vertices.
-Tarjan&amp;rsquo;s Algorithm: Run DFS while maintaining a stack and low-link values.</description>
+      <description>Description Strongly Connected Components operates the directed graph in which there is a directed path from each vertex to every other vertex.
+Weakly Connected Component (the one we discussed before) ignores the direction of the edges. WCC is commonly considered the &amp;ldquo;default&amp;rdquo; CC algorithm, if there isn&amp;rsquo;t a specification for Strongly or Weakly.
+Kosaraju&amp;rsquo;s Algorithm: Run 1st DFS to get finishing times of each vertex (i.e., postordering of DFS). [Backtracking] Run 2nd DFS on the transposed graph, starting with the visited vertices in Reverse Post-Order Each DFS tree in step 2 is an SCC.</description>
     </item>
     
     <item>
@@ -144,7 +155,7 @@ Code std::deque is essentially a sequence of individually allocated fixed-size a
       <guid>https://yuang-chen.github.io/posts/2023-08-31-graph-algorithms/</guid>
       <description>Considering myself a researcher in graph algorithms, I&amp;rsquo;ve come to the surprising realization that my grasp of these algorithms is not as solid as I thought. Hence, this blog series aims to document my exploration of various graph algorithms I&amp;rsquo;ve encountered thus far, regardless of their complexity.
 The algorithms are selected from the parallel graph frameworks GAP and GBBS, focusing on their single-threaded versions to assess their complexity.
-Breadth-First Search (BFS) Single-Source Shortest Paths (SSSP) Connected Components (CC) Betweenness Centrality (BC) Triangle Counting (TC) Minimum Spanning Tree (MST) Strongly Connected Components </description>
+Breadth-First Search (BFS) Single-Source Shortest Paths (SSSP) Connected Components (CC) Betweenness Centrality (BC) Triangle Counting (TC) Minimum Spanning Tree (MST) Strongly Connected Components (SCC) </description>
     </item>
     
     <item>

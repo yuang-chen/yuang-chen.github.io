@@ -6,7 +6,17 @@
     <description>Recent content in STL on Yac&#39;s Log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Oct 2023 10:30:44 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/tags/stl/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 14 Oct 2023 12:17:12 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/tags/stl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Priority Queue</title>
+      <link>https://yuang-chen.github.io/posts/2023-10-14-priority-queue/</link>
+      <pubDate>Sat, 14 Oct 2023 12:17:12 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2023-10-14-priority-queue/</guid>
+      <description>The motivation behind re-implementing the standard containers is the Priority Queue (or namely Max Heap). It combines algorithms and fundamental data structures to create a sophisticated yet highly efficient data structure. My current focus on reinventing these containers has temporarily paused here. Similar containers, like flat_set, are slated for release in C++23. When they become available, I plan to continue this series by attempting to re-implement them.
+Description A priority queue is a container adapter offering constant time access to the largest (by default) element, albeit at the cost of logarithmic time insertion and extraction.</description>
+    </item>
+    
     <item>
       <title>Queue &amp; Stack</title>
       <link>https://yuang-chen.github.io/posts/2023-10-05-queue-stack/</link>

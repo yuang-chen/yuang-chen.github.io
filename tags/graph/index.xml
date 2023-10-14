@@ -13,8 +13,9 @@
       <pubDate>Thu, 12 Oct 2023 11:54:29 +0800</pubDate>
       
       <guid>https://yuang-chen.github.io/posts/2023-10-12-strongly-connected-components/</guid>
-      <description>Description Kosaraju&amp;rsquo;s Algorithm: Run 1st DFS to get finishing times of each vertex (i.e., postordering of DFS). [Backtracking] Run 2nd DFS on the transposed graph, starting with the visited vertices in Reverse Post-Order Each DFS tree in step 2 is an SCC. Reverse Post-Order ensures that, in the second pass, every vertex is processed before any of its dependent vertices.
-Tarjan&amp;rsquo;s Algorithm: Run DFS while maintaining a stack and low-link values.</description>
+      <description>Description Strongly Connected Components operates the directed graph in which there is a directed path from each vertex to every other vertex.
+Weakly Connected Component (the one we discussed before) ignores the direction of the edges. WCC is commonly considered the &amp;ldquo;default&amp;rdquo; CC algorithm, if there isn&amp;rsquo;t a specification for Strongly or Weakly.
+Kosaraju&amp;rsquo;s Algorithm: Run 1st DFS to get finishing times of each vertex (i.e., postordering of DFS). [Backtracking] Run 2nd DFS on the transposed graph, starting with the visited vertices in Reverse Post-Order Each DFS tree in step 2 is an SCC.</description>
     </item>
     
     <item>
@@ -82,7 +83,7 @@ Criteria Dijkstra&amp;rsquo;s Algorithm Bellman-Ford Algorithm Type Greedy Dynam
       <guid>https://yuang-chen.github.io/posts/2023-08-31-graph-algorithms/</guid>
       <description>Considering myself a researcher in graph algorithms, I&amp;rsquo;ve come to the surprising realization that my grasp of these algorithms is not as solid as I thought. Hence, this blog series aims to document my exploration of various graph algorithms I&amp;rsquo;ve encountered thus far, regardless of their complexity.
 The algorithms are selected from the parallel graph frameworks GAP and GBBS, focusing on their single-threaded versions to assess their complexity.
-Breadth-First Search (BFS) Single-Source Shortest Paths (SSSP) Connected Components (CC) Betweenness Centrality (BC) Triangle Counting (TC) Minimum Spanning Tree (MST) Strongly Connected Components </description>
+Breadth-First Search (BFS) Single-Source Shortest Paths (SSSP) Connected Components (CC) Betweenness Centrality (BC) Triangle Counting (TC) Minimum Spanning Tree (MST) Strongly Connected Components (SCC) </description>
     </item>
     
   </channel>
