@@ -48,13 +48,13 @@ std::queue implements a First-In-First-Out (FIFO) flow, making it efficient to r
     </item>
     
     <item>
-      <title>Unordered Set</title>
+      <title>Unordered {Set|Map|Multiset|Multimap}</title>
       <link>https://yuang-chen.github.io/posts/2023-09-27-unordered-set/</link>
       <pubDate>Wed, 27 Sep 2023 18:42:56 +0800</pubDate>
       
       <guid>https://yuang-chen.github.io/posts/2023-09-27-unordered-set/</guid>
-      <description>Description The implementation of std::unordered_set and std::unordered_map involves hashing and the use of buckets. The bucket is simply a vector of (singly) linked list. Here&amp;rsquo;s the procedure for locating (finding, inserting, or erasing) an element:
-Compute the hash value of the key. Determine the index of the target bucket using the modulo operator. Bucket[idx] represents the first element of the linked list. Traverse through the linked list to locate the value.</description>
+      <description>Description The implementation of unordered containers rely on hashing techniques and utilize buckets for storing elements. Each bucket is essentially a vector containing a (singly) linked list. The following steps outline how elements are located, whether for finding, inserting, or erasing:
+Compute the hash value of the key. Determine the bucket index by taking the remainder of the hash value divided by the bucket size, e.g., index = {hash value} % {bucket size}.</description>
     </item>
     
     <item>
