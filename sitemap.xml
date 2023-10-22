@@ -3,7 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://yuang-chen.github.io/posts/</loc>
-    <lastmod>2023-10-14T12:17:12+08:00</lastmod>
+    <lastmod>2023-10-22T16:10:09+08:00</lastmod>
+  </url><url>
+    <loc>https://yuang-chen.github.io/posts/2023-10-22-scan-clustering/</loc>
+    <lastmod>2023-10-22T16:10:09+08:00</lastmod>
+  </url><url>
+    <loc>https://yuang-chen.github.io/</loc>
+    <lastmod>2023-10-22T16:10:09+08:00</lastmod>
   </url><url>
     <loc>https://yuang-chen.github.io/posts/2023-10-14-priority-queue/</loc>
     <lastmod>2023-10-14T12:17:12+08:00</lastmod>
@@ -12,9 +18,6 @@
     <lastmod>2023-10-14T12:17:12+08:00</lastmod>
   </url><url>
     <loc>https://yuang-chen.github.io/tags/</loc>
-    <lastmod>2023-10-14T12:17:12+08:00</lastmod>
-  </url><url>
-    <loc>https://yuang-chen.github.io/</loc>
     <lastmod>2023-10-14T12:17:12+08:00</lastmod>
   </url><url>
     <loc>https://yuang-chen.github.io/tags/graph/</loc>

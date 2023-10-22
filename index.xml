@@ -6,14 +6,25 @@
     <description>Recent content on Yac&#39;s Log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Oct 2023 12:17:12 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 22 Oct 2023 16:10:09 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SCAN Clustering</title>
+      <link>https://yuang-chen.github.io/posts/2023-10-22-scan-clustering/</link>
+      <pubDate>Sun, 22 Oct 2023 16:10:09 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2023-10-22-scan-clustering/</guid>
+      <description>Description The SCAN (Structural Clustering Algorithm for Networks) algorithm is used for detecting clusters in graphs. It also looks at the structural similarity between nodes:
+$$ s(A, B) = \frac{|N(A) \cap N(B)|}{\sqrt{|N(A)| \times |N(B)|}} $$
+Compute Structural Similarity: For each edge (A,B)(A,B), compute its structural similarity score. Identify Strong Relations: Mark edges as &amp;lsquo;strong&amp;rsquo; if their structural similarity is above **eps. Identify Core Nodes: For each node, count its strong relationships.</description>
+    </item>
+    
     <item>
       <title>Priority Queue</title>
       <link>https://yuang-chen.github.io/posts/2023-10-14-priority-queue/</link>
       <pubDate>Sat, 14 Oct 2023 12:17:12 +0800</pubDate>
       
       <guid>https://yuang-chen.github.io/posts/2023-10-14-priority-queue/</guid>
-      <description>The motivation behind re-implementing the standard containers is the Priority Queue (or namely Max Heap). It combines algorithms and fundamental data structures to create a sophisticated yet highly efficient data structure. My current focus on reinventing these containers has temporarily paused here. Similar containers, like flat_set, are slated for release in C++23. When they become available, I plan to continue this series by attempting to re-implement them.
+      <description>The core reason for my re-implementing the standard containers is the Priority Queue (or namely Max Heap). It combines algorithms and fundamental data structures to create a sophisticated yet highly efficient data structure. My current focus on reinventing these containers has temporarily paused here. Similar containers, like flat_set, are slated for release in C++23. When they become available, I plan to continue this series by attempting to re-implement them.
 Description A priority queue is a container adapter offering constant time access to the largest (by default) element, albeit at the cost of logarithmic time insertion and extraction.</description>
     </item>
     
