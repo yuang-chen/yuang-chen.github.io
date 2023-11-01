@@ -6,7 +6,26 @@
     <description>Recent content on Yac&#39;s Log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Oct 2023 16:10:09 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Nov 2023 15:10:00 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Trivial Class vs Aggregate Structure</title>
+      <link>https://yuang-chen.github.io/posts/2023-11-01-trivial-class-vs-aggregate-structure/</link>
+      <pubDate>Wed, 01 Nov 2023 15:10:00 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2023-11-01-trivial-class-vs-aggregate-structure/</guid>
+      <description>Trivial Class vs Aggregate Structure Trivial Class A trivial class is a class that:
+Has a trivial default constructor. Has a trivial copy constructor. Has a trivial move constructor (since C++11). Has a trivial copy assignment operator. Has a trivial move assignment operator (since C++11). Has a trivial destructor. Has no virtual functions or virtual base classes. The trivial constructors/operations/destructor means they are not user-provided (i.e., is implicitly-defined or defaulted on its first declaration).</description>
+    </item>
+    
+    <item>
+      <title>Initialization With Brackets</title>
+      <link>https://yuang-chen.github.io/posts/2023-10-29-initialization-with-brackets/</link>
+      <pubDate>Sun, 29 Oct 2023 15:03:28 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2023-10-29-initialization-with-brackets/</guid>
+      <description>The table summarizes how brackets {} and () are related to list-initialization in various contexts. The column Allows Narrowing Conversion indicates whether implicit type conversions that lose information are allowed. The column Allows Explicit Constructors indicates whether the syntax can call constructors marked as explicit. The columns Use for Aggregates and Use for User-Defined Types show the applicability of each initialization type for aggregates like arrays (e.g., int x[3][4]) and structs, and user-defined types like classes, respectively.</description>
+    </item>
+    
     <item>
       <title>SCAN Clustering</title>
       <link>https://yuang-chen.github.io/posts/2023-10-22-scan-clustering/</link>

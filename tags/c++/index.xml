@@ -6,7 +6,79 @@
     <description>Recent content in c&#43;&#43; on Yac&#39;s Log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 13 May 2023 22:11:07 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/tags/c++/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Nov 2023 15:10:00 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/tags/c++/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Trivial Class vs Aggregate Structure</title>
+      <link>https://yuang-chen.github.io/posts/2023-11-01-trivial-class-vs-aggregate-structure/</link>
+      <pubDate>Wed, 01 Nov 2023 15:10:00 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2023-11-01-trivial-class-vs-aggregate-structure/</guid>
+      <description>Trivial Class vs Aggregate Structure Trivial Class A trivial class is a class that:
+Has a trivial default constructor. Has a trivial copy constructor. Has a trivial move constructor (since C++11). Has a trivial copy assignment operator. Has a trivial move assignment operator (since C++11). Has a trivial destructor. Has no virtual functions or virtual base classes. The trivial constructors/operations/destructor means they are not user-provided (i.e., is implicitly-defined or defaulted on its first declaration).</description>
+    </item>
+    
+    <item>
+      <title>Initialization With Brackets</title>
+      <link>https://yuang-chen.github.io/posts/2023-10-29-initialization-with-brackets/</link>
+      <pubDate>Sun, 29 Oct 2023 15:03:28 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2023-10-29-initialization-with-brackets/</guid>
+      <description>The table summarizes how brackets {} and () are related to list-initialization in various contexts. The column Allows Narrowing Conversion indicates whether implicit type conversions that lose information are allowed. The column Allows Explicit Constructors indicates whether the syntax can call constructors marked as explicit. The columns Use for Aggregates and Use for User-Defined Types show the applicability of each initialization type for aggregates like arrays (e.g., int x[3][4]) and structs, and user-defined types like classes, respectively.</description>
+    </item>
+    
+    <item>
+      <title>Scope Guard</title>
+      <link>https://yuang-chen.github.io/posts/2023-08-29-scope-guard/</link>
+      <pubDate>Tue, 29 Aug 2023 10:27:54 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2023-08-29-scope-guard/</guid>
+      <description>Background Scope Guard is a concept reminiscent of the RAII (Resource Acquisition Is Initialization) principle in C++. The idea is to manage resources (like memory, files, network sockets, etc.) using object lifetime. When the object goes out of scope, its destructor ensures that the resource is cleaned up properly. The scope guard is intended to run a given callable (like a function or lambda) when it is destroyed.
+RAII (Resource Acquisition Is Initialization) is a programming idiom used in C++ where the lifetime of an object is bound to the lifetime of its scope (typically represented by a block of code wrapped in curly braces {}).</description>
+    </item>
+    
+    <item>
+      <title>Static Local Member</title>
+      <link>https://yuang-chen.github.io/posts/2023-08-27-static-local-member/</link>
+      <pubDate>Sun, 27 Aug 2023 11:45:15 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2023-08-27-static-local-member/</guid>
+      <description>C++ templates are blueprints and don&amp;rsquo;t represent specific types until they are instantiated with actual types. Once instantiated, the compiler creates a specific version of that template for the provided type. For template classes, each instantiation has its own unique version of the static members, making them distinct for each type the template is instantiated with.
+///////////////////// // Code Block 1 ///////////////////// #include&amp;lt;iostream&amp;gt; class ComponentBase{ protected: // component_type_count is a static variable shared by derived classes static inline size_t component_type_count = 0; }; template&amp;lt;typename T&amp;gt; class Component : public ComponentBase{ public: static size_t component_type_id(){ // ID is the static local variable for a particular type T static size_t ID = component_type_count++; return ID; } }; class A : public Component&amp;lt;A&amp;gt; {}; class B : public Component&amp;lt;B&amp;gt; {}; class C : public Component&amp;lt;C&amp;gt; {}; int main() { std::cout &amp;lt;&amp;lt; A::component_type_id() &amp;lt;&amp;lt; std::endl; // 0 std::cout &amp;lt;&amp;lt; B::component_type_id() &amp;lt;&amp;lt; std::endl; // 1 std::cout &amp;lt;&amp;lt; B::component_type_id() &amp;lt;&amp;lt; std::endl; // 1 std::cout &amp;lt;&amp;lt; A::component_type_id() &amp;lt;&amp;lt; std::endl; // 0 std::cout &amp;lt;&amp;lt; A::component_type_id() &amp;lt;&amp;lt; std::endl; // 0 std::cout &amp;lt;&amp;lt; C::component_type_id() &amp;lt;&amp;lt; std::endl; // 2 } Key Points:</description>
+    </item>
+    
+    <item>
+      <title>Formatter Specialization</title>
+      <link>https://yuang-chen.github.io/posts/2023-08-25-formatter-specialization/</link>
+      <pubDate>Fri, 25 Aug 2023 19:56:16 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2023-08-25-formatter-specialization/</guid>
+      <description>We can customize the (printing) format of a given class by using the specialization of formatter.
+#include &amp;lt;format&amp;gt; #include &amp;lt;iostream&amp;gt; struct Frac { int a, b; }; template &amp;lt;&amp;gt; struct std::formatter&amp;lt;Frac&amp;gt; : std::formatter&amp;lt;string_view&amp;gt; { // parse() is inherited from the base class std::formatter&amp;lt;string_view&amp;gt; // * an efficient solution: auto format(const Frac&amp;amp; frac, std::format_context&amp;amp; ctx) const { return std::format_to(ctx.out(), &amp;#34;{}/{}&amp;#34;, frac.a, frac.b); } // the same functionality as above, but inefficient due to the temporary string // auto format(const Frac&amp;amp; frac, std::format_context&amp;amp; ctx) const { // std::string temp; // std::format_to(std::back_inserter(temp), &amp;#34;{}/{}&amp;#34;, // frac.</description>
+    </item>
+    
+    <item>
+      <title>User Defined Literals</title>
+      <link>https://yuang-chen.github.io/posts/2023-08-22-user-defined-literals/</link>
+      <pubDate>Tue, 22 Aug 2023 23:18:37 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2023-08-22-user-defined-literals/</guid>
+      <description>User Defined Literals (UDL) produces an object in an interesting way:
+constexpr auto operator&amp;#34;&amp;#34;_f(const char* fmt, size_t) { return[=]&amp;lt;typename... T&amp;gt;(T&amp;amp;&amp;amp;... Args) { return std::vformat(fmt, std::make_format_args(std::forward&amp;lt;T&amp;gt;(Args)...)); }; } auto s = &amp;#34;example {} see {}&amp;#34;_f(&amp;#34;yep&amp;#34;, 1.1); // s = &amp;#34;example yep 1.1&amp;#34; The UDL _f has the same effect of std::format(&amp;quot;example {} see {}&amp;quot;, &amp;quot;yep&amp;quot;, 1.1). Pretty familiar (as libfmt), right?
+Now, let&amp;rsquo;s break the definition of _f down:
+int x = 10; double y = 3.</description>
+    </item>
+    
+    <item>
+      <title>Operator Overload</title>
+      <link>https://yuang-chen.github.io/posts/2023-08-17-operator-overload/</link>
+      <pubDate>Thu, 17 Aug 2023 10:36:19 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2023-08-17-operator-overload/</guid>
+      <description>Reference: here.
+The return of overloaded operator should be a reference, otherwise return-by-code will create a (temporary) rvalue that cannot be passed to the next operation f2 by non-const reference. i.e., rvalue cannot be non-const referenced.
+#include &amp;lt;vector&amp;gt; #include &amp;lt;iostream&amp;gt; #include &amp;lt;functional&amp;gt; template&amp;lt;typename T, typename FN&amp;gt; requires std::invocable&amp;lt;FN, T&amp;amp;&amp;gt; // diff std::invocable? std::vector&amp;lt;T&amp;gt;&amp;amp; operator| (std::vector&amp;lt;T&amp;gt;&amp;amp; vec, FN fn) noexcept { for(auto&amp;amp; e: vec) { fn(e); } return vec; } int main(){ std::vector v{1, 2, 3}; auto f1 = [](int&amp;amp; i) {i *= i; }; std::function f2 {[](const int&amp;amp; i) {std::cout &amp;lt;&amp;lt; i &amp;lt;&amp;lt; &amp;#39; &amp;#39;; } }; v | f1 | f2; }``` </description>
+    </item>
+    
     <item>
       <title>Multidimensional Subscript Operator []</title>
       <link>https://yuang-chen.github.io/posts/2023-05-13-multidim-subscript-operator/</link>

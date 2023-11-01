@@ -2,22 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://yuang-chen.github.io/posts/</loc>
-    <lastmod>2023-10-22T16:10:09+08:00</lastmod>
+    <loc>https://yuang-chen.github.io/tags/c&#43;&#43;/</loc>
+    <lastmod>2023-11-01T15:10:00+08:00</lastmod>
   </url><url>
-    <loc>https://yuang-chen.github.io/posts/2023-10-22-scan-clustering/</loc>
-    <lastmod>2023-10-22T16:10:09+08:00</lastmod>
+    <loc>https://yuang-chen.github.io/posts/</loc>
+    <lastmod>2023-11-01T15:10:00+08:00</lastmod>
+  </url><url>
+    <loc>https://yuang-chen.github.io/tags/</loc>
+    <lastmod>2023-11-01T15:10:00+08:00</lastmod>
+  </url><url>
+    <loc>https://yuang-chen.github.io/posts/2023-11-01-trivial-class-vs-aggregate-structure/</loc>
+    <lastmod>2023-11-01T15:10:00+08:00</lastmod>
   </url><url>
     <loc>https://yuang-chen.github.io/</loc>
+    <lastmod>2023-11-01T15:10:00+08:00</lastmod>
+  </url><url>
+    <loc>https://yuang-chen.github.io/posts/2023-10-29-initialization-with-brackets/</loc>
+    <lastmod>2023-10-29T15:03:28+08:00</lastmod>
+  </url><url>
+    <loc>https://yuang-chen.github.io/posts/2023-10-22-scan-clustering/</loc>
     <lastmod>2023-10-22T16:10:09+08:00</lastmod>
   </url><url>
     <loc>https://yuang-chen.github.io/posts/2023-10-14-priority-queue/</loc>
     <lastmod>2023-10-14T12:17:12+08:00</lastmod>
   </url><url>
     <loc>https://yuang-chen.github.io/tags/stl/</loc>
-    <lastmod>2023-10-14T12:17:12+08:00</lastmod>
-  </url><url>
-    <loc>https://yuang-chen.github.io/tags/</loc>
     <lastmod>2023-10-14T12:17:12+08:00</lastmod>
   </url><url>
     <loc>https://yuang-chen.github.io/tags/graph/</loc>
@@ -68,9 +77,6 @@
     <loc>https://yuang-chen.github.io/posts/2023-08-30-stl-containers/</loc>
     <lastmod>2023-08-30T14:13:22+08:00</lastmod>
   </url><url>
-    <loc>https://yuang-chen.github.io/tags/c&#43;&#43;20/</loc>
-    <lastmod>2023-08-29T10:27:54+08:00</lastmod>
-  </url><url>
     <loc>https://yuang-chen.github.io/posts/2023-08-29-scope-guard/</loc>
     <lastmod>2023-08-29T10:27:54+08:00</lastmod>
   </url><url>
@@ -85,9 +91,6 @@
   </url><url>
     <loc>https://yuang-chen.github.io/posts/2023-08-17-operator-overload/</loc>
     <lastmod>2023-08-17T10:36:19+08:00</lastmod>
-  </url><url>
-    <loc>https://yuang-chen.github.io/tags/c&#43;&#43;/</loc>
-    <lastmod>2023-05-13T22:11:07+08:00</lastmod>
   </url><url>
     <loc>https://yuang-chen.github.io/tags/c&#43;&#43;23/</loc>
     <lastmod>2023-05-13T22:11:07+08:00</lastmod>
