@@ -6,7 +6,18 @@
     <description>Recent content on Yac&#39;s Log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Nov 2023 15:10:00 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Nov 2023 19:04:28 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Low Diameter Decomposition</title>
+      <link>https://yuang-chen.github.io/posts/2023-11-02-low-diameter-decomposition/</link>
+      <pubDate>Thu, 02 Nov 2023 19:04:28 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2023-11-02-low-diameter-decomposition/</guid>
+      <description>Note The Low-Diameter Decomposition (LDD) algorithm is a graph partitioning algorithm that decomposes a graph into several connected subgraphs (or components) such that each subgraph has a low diameter. The diameter of a subgraph is defined as the maximum shortest path distance between any two nodes within the subgraph.
+The LDD algorithm works as follows:
+Start with an empty decomposition and an empty queue. Pick an unvisited node u and create a new set containing only u.</description>
+    </item>
+    
     <item>
       <title>Trivial Class vs Aggregate Structure</title>
       <link>https://yuang-chen.github.io/posts/2023-11-01-trivial-class-vs-aggregate-structure/</link>
@@ -185,7 +196,7 @@ Code std::deque is essentially a sequence of individually allocated fixed-size a
       <guid>https://yuang-chen.github.io/posts/2023-08-31-graph-algorithms/</guid>
       <description>Considering myself a researcher in graph algorithms, I&amp;rsquo;ve come to the surprising realization that my grasp of these algorithms is not as solid as I thought. Hence, this blog series aims to document my exploration of various graph algorithms I&amp;rsquo;ve encountered thus far, regardless of their complexity.
 The algorithms are selected from the parallel graph frameworks GAP and GBBS, focusing on their single-threaded versions to assess their complexity.
-Breadth-First Search (BFS) Single-Source Shortest Paths (SSSP) Connected Components (CC) Betweenness Centrality (BC) Triangle Counting (TC) Minimum Spanning Tree (MST) Strongly Connected Components (SCC) </description>
+Breadth-First Search (BFS) Single-Source Shortest Paths (SSSP) Connected Components (CC) Betweenness Centrality (BC) Triangle Counting (TC) Minimum Spanning Tree (MST) Strongly Connected Components (SCC) SCAN Clustering (SCAN) Low Diameter Decomposition (LDD) </description>
     </item>
     
     <item>
