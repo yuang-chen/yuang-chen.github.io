@@ -6,7 +6,17 @@
     <description>Recent content in Posts on Yac&#39;s Log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Nov 2023 19:04:28 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Nov 2023 10:43:56 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Biconnected Components</title>
+      <link>https://yuang-chen.github.io/posts/2023-11-20-biconnected-components/</link>
+      <pubDate>Mon, 20 Nov 2023 10:43:56 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2023-11-20-biconnected-components/</guid>
+      <description>Note Biconnectivity in graphs is an important concept used to identify biconnected components (BCCs). A graph is biconnected if it is connected and does not have any articulation points, meaning removing any single vertex will not disconnect the graph. The biconnected components of a graph are maximal biconnected subgraphs.
+Strict Definition: A BCC should contain at least three vertices in a cycle, ensuring that the removal of any single vertex does not disconnect the component.</description>
+    </item>
+    
     <item>
       <title>Low Diameter Decomposition</title>
       <link>https://yuang-chen.github.io/posts/2023-11-02-low-diameter-decomposition/</link>
