@@ -6,7 +6,17 @@
     <description>Recent content in Graph on Yac&#39;s Log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 Dec 2023 23:21:43 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/tags/graph/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 Dec 2023 11:00:10 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/tags/graph/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Maximal Independent Set</title>
+      <link>https://yuang-chen.github.io/posts/2023-12-13-maximal-independent-set/</link>
+      <pubDate>Wed, 13 Dec 2023 11:00:10 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2023-12-13-maximal-independent-set/</guid>
+      <description>Maximal Independent Set An independent set in a graph is a set of vertices, no two of which are adjacent. A maximal independent set is an independent set that is not a subset of any other independent set in the graph. Here&amp;rsquo;s a basic approach to find a Maximal Independent Set:
+Start with an empty set S. Iterate over all vertices of the graph. For each vertex: If the vertex and its neighbors are not in S, add the vertex to S.</description>
+    </item>
+    
     <item>
       <title>Maximal Matching</title>
       <link>https://yuang-chen.github.io/posts/2023-12-05-maximal-matching/</link>
@@ -124,7 +134,7 @@ Criteria Dijkstra&amp;rsquo;s Algorithm Bellman-Ford Algorithm Type Greedy Dynam
       <guid>https://yuang-chen.github.io/posts/2023-08-31-graph-algorithms/</guid>
       <description>Considering myself a researcher in graph algorithms, I&amp;rsquo;ve come to the surprising realization that my grasp of these algorithms is not as solid as I thought. Hence, this blog series aims to document my exploration of various graph algorithms I&amp;rsquo;ve encountered thus far, regardless of their complexity.
 The algorithms are selected from the parallel graph frameworks GAP and GBBS, focusing on their single-threaded versions to assess their complexity.
-Breadth-First Search (BFS) Single-Source Shortest Paths (SSSP) Connected Components (CC) Betweenness Centrality (BC) Triangle Counting (TC) Minimum Spanning Tree (MST) Strongly Connected Components (SCC) SCAN Clustering (SCAN) Low Diameter Decomposition (LDD) </description>
+Breadth-First Search (BFS) Single-Source Shortest Paths (SSSP) Connected Components (CC) Betweenness Centrality (BC) Triangle Counting (TC) Minimum Spanning Tree (MST) Strongly Connected Components (SCC) SCAN Clustering (SCAN) Low Diameter Decomposition (LDD) Biconnected-Components (BC) Graph Coloring (COLOR) Maximal Matching (MM) Maximal Independent Set (MIS) </description>
     </item>
     
   </channel>

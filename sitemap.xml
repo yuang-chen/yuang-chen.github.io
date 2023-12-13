@@ -2,22 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://yuang-chen.github.io/tags/graph/</loc>
+    <lastmod>2023-12-13T11:00:10+08:00</lastmod>
+  </url><url>
     <loc>https://yuang-chen.github.io/posts/2023-12-13-maximal-independent-set/</loc>
     <lastmod>2023-12-13T11:00:10+08:00</lastmod>
   </url><url>
     <loc>https://yuang-chen.github.io/posts/</loc>
     <lastmod>2023-12-13T11:00:10+08:00</lastmod>
   </url><url>
+    <loc>https://yuang-chen.github.io/tags/</loc>
+    <lastmod>2023-12-13T11:00:10+08:00</lastmod>
+  </url><url>
     <loc>https://yuang-chen.github.io/</loc>
     <lastmod>2023-12-13T11:00:10+08:00</lastmod>
   </url><url>
-    <loc>https://yuang-chen.github.io/tags/graph/</loc>
-    <lastmod>2023-12-05T23:21:43+08:00</lastmod>
-  </url><url>
     <loc>https://yuang-chen.github.io/posts/2023-12-05-maximal-matching/</loc>
-    <lastmod>2023-12-05T23:21:43+08:00</lastmod>
-  </url><url>
-    <loc>https://yuang-chen.github.io/tags/</loc>
     <lastmod>2023-12-05T23:21:43+08:00</lastmod>
   </url><url>
     <loc>https://yuang-chen.github.io/tags/c&#43;&#43;/</loc>
