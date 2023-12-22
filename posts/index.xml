@@ -13,7 +13,7 @@
       <pubDate>Wed, 13 Dec 2023 11:00:10 +0800</pubDate>
       
       <guid>https://yuang-chen.github.io/posts/2023-12-13-maximal-independent-set/</guid>
-      <description>Maximal Independent Set An independent set in a graph is a set of vertices, no two of which are adjacent. A maximal independent set is an independent set that is not a subset of any other independent set in the graph. Here&amp;rsquo;s a basic approach to find a Maximal Independent Set:
+      <description>Note An independent set in a graph is a set of vertices, no two of which are adjacent. A maximal independent set is an independent set that is not a subset of any other independent set in the graph. Here&amp;rsquo;s a basic approach to find a Maximal Independent Set:
 Start with an empty set S. Iterate over all vertices of the graph. For each vertex: If the vertex and its neighbors are not in S, add the vertex to S.</description>
     </item>
     
@@ -23,8 +23,9 @@ Start with an empty set S. Iterate over all vertices of the graph. For each vert
       <pubDate>Tue, 05 Dec 2023 23:21:43 +0800</pubDate>
       
       <guid>https://yuang-chen.github.io/posts/2023-12-05-maximal-matching/</guid>
-      <description>Maximal Matching The Matching algorithm is a graph algorithm that finds a matching in a graph, where a matching is a set of edges without common vertices. In other words, a subset of the edges is a matching if each vertex appears in at most one edge of that matching.
-A Maximal matching is a matching that cannot have any more edges added to it without violating the matching property.</description>
+      <description>Note The Matching algorithm is a graph algorithm that finds a matching in a graph, where a matching is a set of edges without common vertices. In other words, a subset of the edges is a matching if each vertex appears in at most one edge of that matching.
+A Maximal matching is a matching that cannot have any more edges added to it without violating the matching property.
+A maximum matching is a matching that contains the largest possible number of edges.</description>
     </item>
     
     <item>
@@ -33,7 +34,7 @@ A Maximal matching is a matching that cannot have any more edges added to it wit
       <pubDate>Sat, 02 Dec 2023 18:12:37 +0800</pubDate>
       
       <guid>https://yuang-chen.github.io/posts/2023-12-02-observable-behaviors/</guid>
-      <description>Observable Behavior What is Observable Behavior &amp;amp; Related Issues The term observable behavior, according to the standard, means the following:
+      <description>What is Observable Behavior &amp;amp; Related Issues The term observable behavior, according to the standard, means the following:
 — Accesses (reads and writes) to volatile objects occur strictly according to the semantics of the expressions in which they occur. In particular, they are not reordered with respect to other volatile accesses on the same thread.
 — At program termination, all data written into files shall be identical to one of the possible results that execution of the program according to the abstract semantics would have produced.</description>
     </item>
@@ -94,7 +95,7 @@ Has a trivial default constructor. Has a trivial copy constructor. Has a trivial
       <pubDate>Sun, 22 Oct 2023 16:10:09 +0800</pubDate>
       
       <guid>https://yuang-chen.github.io/posts/2023-10-22-scan-clustering/</guid>
-      <description>Description The SCAN (Structural Clustering Algorithm for Networks) algorithm is used for detecting clusters in graphs. It also looks at the structural similarity between nodes:
+      <description>Note The SCAN (Structural Clustering Algorithm for Networks) algorithm is used for detecting clusters in graphs. It also looks at the structural similarity between nodes:
 $$ s(A, B) = \frac{|N(A) \cap N(B)|}{\sqrt{|N(A)| \times |N(B)|}} $$
 Compute Structural Similarity: For each edge (A,B)(A,B), compute its structural similarity score. Identify Strong Relations: Mark edges as &amp;lsquo;strong&amp;rsquo; if their structural similarity is above **eps. Identify Core Nodes: For each node, count its strong relationships.</description>
     </item>

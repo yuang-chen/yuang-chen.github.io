@@ -13,7 +13,7 @@
       <pubDate>Wed, 13 Dec 2023 11:00:10 +0800</pubDate>
       
       <guid>https://yuang-chen.github.io/posts/2023-12-13-maximal-independent-set/</guid>
-      <description>Maximal Independent Set An independent set in a graph is a set of vertices, no two of which are adjacent. A maximal independent set is an independent set that is not a subset of any other independent set in the graph. Here&amp;rsquo;s a basic approach to find a Maximal Independent Set:
+      <description>Note An independent set in a graph is a set of vertices, no two of which are adjacent. A maximal independent set is an independent set that is not a subset of any other independent set in the graph. Here&amp;rsquo;s a basic approach to find a Maximal Independent Set:
 Start with an empty set S. Iterate over all vertices of the graph. For each vertex: If the vertex and its neighbors are not in S, add the vertex to S.</description>
     </item>
     
@@ -23,8 +23,9 @@ Start with an empty set S. Iterate over all vertices of the graph. For each vert
       <pubDate>Tue, 05 Dec 2023 23:21:43 +0800</pubDate>
       
       <guid>https://yuang-chen.github.io/posts/2023-12-05-maximal-matching/</guid>
-      <description>Maximal Matching The Matching algorithm is a graph algorithm that finds a matching in a graph, where a matching is a set of edges without common vertices. In other words, a subset of the edges is a matching if each vertex appears in at most one edge of that matching.
-A Maximal matching is a matching that cannot have any more edges added to it without violating the matching property.</description>
+      <description>Note The Matching algorithm is a graph algorithm that finds a matching in a graph, where a matching is a set of edges without common vertices. In other words, a subset of the edges is a matching if each vertex appears in at most one edge of that matching.
+A Maximal matching is a matching that cannot have any more edges added to it without violating the matching property.
+A maximum matching is a matching that contains the largest possible number of edges.</description>
     </item>
     
     <item>

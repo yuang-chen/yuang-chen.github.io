@@ -13,7 +13,7 @@
       <pubDate>Sat, 02 Dec 2023 18:12:37 +0800</pubDate>
       
       <guid>https://yuang-chen.github.io/posts/2023-12-02-observable-behaviors/</guid>
-      <description>Observable Behavior What is Observable Behavior &amp;amp; Related Issues The term observable behavior, according to the standard, means the following:
+      <description>What is Observable Behavior &amp;amp; Related Issues The term observable behavior, according to the standard, means the following:
 — Accesses (reads and writes) to volatile objects occur strictly according to the semantics of the expressions in which they occur. In particular, they are not reordered with respect to other volatile accesses on the same thread.
 — At program termination, all data written into files shall be identical to one of the possible results that execution of the program according to the abstract semantics would have produced.</description>
     </item>
