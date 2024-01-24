@@ -8,7 +8,7 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 21 Jan 2024 16:54:09 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/tags/cuda/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>2024 01 21 Tensor Core Register Layout</title>
+      <title>Tensor Core Register Layout</title>
       <link>https://yuang-chen.github.io/posts/2024-01-21-tensor-core-register-layout/</link>
       <pubDate>Sun, 21 Jan 2024 16:54:09 +0800</pubDate>
       
