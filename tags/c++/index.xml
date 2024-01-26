@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>c&#43;&#43; on Yac&#39;s Log</title>
+    <title>C&#43;&#43; on Yac&#39;s Log</title>
     <link>https://yuang-chen.github.io/tags/c&#43;&#43;/</link>
-    <description>Recent content in c&#43;&#43; on Yac&#39;s Log</description>
+    <description>Recent content in C&#43;&#43; on Yac&#39;s Log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 02 Dec 2023 18:12:37 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/tags/c++/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 24 Jan 2024 09:33:57 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/tags/c++/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Non-Virtual Polymorphism</title>
+      <link>https://yuang-chen.github.io/posts/2024-01-24-non-virtual-polymorphism/</link>
+      <pubDate>Wed, 24 Jan 2024 09:33:57 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2024-01-24-non-virtual-polymorphism/</guid>
+      <description>Modern Features in C++17 Non-virtual runtime polymorphism can be achieved with modern C++ (e.g., C++17) features std::any and std::variant as described in the table below.
+Notice std::tuple is not used for polymorphism; it offers a structured way to manage multiple values of different types simultaneously, such as in function return types, or parameter packs. It is put here because of its usage is a bit similar to std::any and std::variant.</description>
+    </item>
+    
     <item>
       <title>Observable Behaviors</title>
       <link>https://yuang-chen.github.io/posts/2023-12-02-observable-behaviors/</link>

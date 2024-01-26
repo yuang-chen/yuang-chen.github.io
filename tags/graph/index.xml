@@ -6,7 +6,18 @@
     <description>Recent content in Graph on Yac&#39;s Log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 13 Dec 2023 11:00:10 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/tags/graph/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 Jan 2024 11:36:24 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/tags/graph/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Approximate Densest Subgraph</title>
+      <link>https://yuang-chen.github.io/posts/2024-01-26-approximate-densest-subgraph/</link>
+      <pubDate>Fri, 26 Jan 2024 11:36:24 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2024-01-26-approximate-densest-subgraph/</guid>
+      <description>Note The Approximate Densest Subgraph problem involves finding a subgraph of a given graph that has the highest density, where density is typically defined as the number of edges divided by the number of vertices in the subgraph. Finding the exact densest subgraph is computationally expensive, so approximate solutions are often sought.
+Here&amp;rsquo;s a high-level outline of how an approximate algorithm for this problem might be implemented:
+Initialization: Start with all vertices of the graph and no edges.</description>
+    </item>
+    
     <item>
       <title>Maximal Independent Set</title>
       <link>https://yuang-chen.github.io/posts/2023-12-13-maximal-independent-set/</link>
