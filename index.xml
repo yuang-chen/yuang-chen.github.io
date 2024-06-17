@@ -6,7 +6,26 @@
     <description>Recent content on Yac&#39;s Log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 26 Jan 2024 11:36:24 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 17 Jun 2024 09:30:14 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Constrained Non Type Template Parameter</title>
+      <link>https://yuang-chen.github.io/posts/2024-06-17-constrained-non-type-template-parameter/</link>
+      <pubDate>Mon, 17 Jun 2024 09:30:14 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2024-06-17-constrained-non-type-template-parameter/</guid>
+      <description> NTTP (C++98): Allows templates to accept non-type parameters like integers or pointers, enhancing flexibility and efficiency. CNTTP (C++20): Extends NTTP by using concepts to constrain non-type parameters, improving type safety and expressiveness. Code Example #include &amp;lt;concepts&amp;gt; #include &amp;lt;cstddef&amp;gt; // Function using NTTP template&amp;lt;size_t i&amp;gt; // size_t is unsigned, so negative values will cause an error auto get_value_nttp() { return i; } // Function using CNTTP template&amp;lt;std::integral auto I&amp;gt; // constrained to integral types auto get_value_cnttp() { return I; } int main() { // NTTP example auto x = get_value_nttp&amp;lt;10&amp;gt;(); // correct, 10 is a valid size_t // auto y = get_value_nttp&amp;lt;-10&amp;gt;(); // error, -10 is not a valid size_t (uncomment to see the error) // CNTTP example auto w = get_value_cnttp&amp;lt;10&amp;gt;(); // correct, 10 is an integral type auto z = get_value_cnttp&amp;lt;-10&amp;gt;(); // correct, -10 is an integral type return 0; } </description>
+    </item>
+    
+    <item>
+      <title>Class Template Argument Deduction</title>
+      <link>https://yuang-chen.github.io/posts/2024-05-07-class-template-argument-deduction/</link>
+      <pubDate>Tue, 07 May 2024 09:05:16 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2024-05-07-class-template-argument-deduction/</guid>
+      <description>Class Template Argument Deduction (CTAD) is a feature introduced in C++17 that allows the compiler to deduce the template arguments for class templates from the constructor arguments. This makes code more concise and avoids the need for explicit template arguments.
+Example without CTAD: #include &amp;lt;vector&amp;gt; #include &amp;lt;iostream&amp;gt; int main() { std::vector&amp;lt;int&amp;gt; vec = {1, 2, 3, 4, 5}; // Explicit template argument for (const auto&amp;amp; elem : vec) { std::cout &amp;lt;&amp;lt; elem &amp;lt;&amp;lt; &amp;#34; &amp;#34;; } return 0; } Example with CTAD: #include &amp;lt;vector&amp;gt; #include &amp;lt;iostream&amp;gt; int main() { std::vector vec1 = {1, 2, 3, 4, 5}; // CTAD deduces std::vector&amp;lt;int&amp;gt; std::vector vec2 = {1.</description>
+    </item>
+    
     <item>
       <title>Approximate Densest Subgraph</title>
       <link>https://yuang-chen.github.io/posts/2024-01-26-approximate-densest-subgraph/</link>
