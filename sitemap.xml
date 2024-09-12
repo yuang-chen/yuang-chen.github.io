@@ -2,19 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://yuang-chen.github.io/tags/cuda/</loc>
+    <lastmod>2024-09-12T18:49:29+08:00</lastmod>
+  </url><url>
+    <loc>https://yuang-chen.github.io/posts/2024-09-12-half-half2-float/</loc>
+    <lastmod>2024-09-12T18:49:29+08:00</lastmod>
+  </url><url>
+    <loc>https://yuang-chen.github.io/posts/</loc>
+    <lastmod>2024-09-12T18:49:29+08:00</lastmod>
+  </url><url>
+    <loc>https://yuang-chen.github.io/tags/</loc>
+    <lastmod>2024-09-12T18:49:29+08:00</lastmod>
+  </url><url>
+    <loc>https://yuang-chen.github.io/</loc>
+    <lastmod>2024-09-12T18:49:29+08:00</lastmod>
+  </url><url>
     <loc>https://yuang-chen.github.io/tags/c&#43;&#43;/</loc>
     <lastmod>2024-06-17T09:30:14+08:00</lastmod>
   </url><url>
     <loc>https://yuang-chen.github.io/posts/2024-06-17-constrained-non-type-template-parameter/</loc>
-    <lastmod>2024-06-17T09:30:14+08:00</lastmod>
-  </url><url>
-    <loc>https://yuang-chen.github.io/posts/</loc>
-    <lastmod>2024-06-17T09:30:14+08:00</lastmod>
-  </url><url>
-    <loc>https://yuang-chen.github.io/tags/</loc>
-    <lastmod>2024-06-17T09:30:14+08:00</lastmod>
-  </url><url>
-    <loc>https://yuang-chen.github.io/</loc>
     <lastmod>2024-06-17T09:30:14+08:00</lastmod>
   </url><url>
     <loc>https://yuang-chen.github.io/posts/2024-05-07-class-template-argument-deduction/</loc>
@@ -28,9 +34,6 @@
   </url><url>
     <loc>https://yuang-chen.github.io/posts/2024-01-24-non-virtual-polymorphism/</loc>
     <lastmod>2024-01-24T09:33:57+08:00</lastmod>
-  </url><url>
-    <loc>https://yuang-chen.github.io/tags/cuda/</loc>
-    <lastmod>2024-01-21T16:54:09+08:00</lastmod>
   </url><url>
     <loc>https://yuang-chen.github.io/posts/2024-01-21-tensor-core-register-layout/</loc>
     <lastmod>2024-01-21T16:54:09+08:00</lastmod>

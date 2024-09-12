@@ -6,7 +6,16 @@
     <description>Recent content in Tags on Yac&#39;s Log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 17 Jun 2024 09:30:14 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 Sep 2024 18:49:29 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CUDA</title>
+      <link>https://yuang-chen.github.io/tags/cuda/</link>
+      <pubDate>Thu, 12 Sep 2024 18:49:29 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/tags/cuda/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>C&#43;&#43;</title>
       <link>https://yuang-chen.github.io/tags/c&#43;&#43;/</link>
@@ -22,15 +31,6 @@
       <pubDate>Fri, 26 Jan 2024 11:36:24 +0800</pubDate>
       
       <guid>https://yuang-chen.github.io/tags/graph/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>CUDA</title>
-      <link>https://yuang-chen.github.io/tags/cuda/</link>
-      <pubDate>Sun, 21 Jan 2024 16:54:09 +0800</pubDate>
-      
-      <guid>https://yuang-chen.github.io/tags/cuda/</guid>
       <description></description>
     </item>
     
