@@ -13,8 +13,8 @@
       
       <guid>https://yuang-chen.github.io/about/aboutme/</guid>
       <description>I am now a Postdoc at CUHK, and graduated from CUHK on Shenzhen campus for my PhD. My CV is da.
-My research explores sparse workloads on modern computing hardware. I have a keen interest in tackling graph-related problems across a range of computing platforms, including CPUs with OpenMP, GPUs utilizing CUDA, and clusters utilizing MPI and RMDA.
-At the heart of my research lies in the interplay between sparse matrices and dense computing.</description>
+My research focuses on optimizing sparse workloads for modern computing hardware. This involves addressing the challenge of efficiently processing sparse data structures (containing mostly empty or zero values) on hardware designed for dense, regular computations.
+Parallel Graph algorithms, e,g, PageRank, BFS, Triangle Counting, etc. Sparse matrix multiplication (SpMV, SpMM, SDDMM, SpGEMM) on CPUs and GPUs Graph Neural Network &amp;amp; Sparse Large Language Models.</description>
     </item>
     
   </channel>
