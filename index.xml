@@ -6,7 +6,17 @@
     <description>Recent content on Yac&#39;s Log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Sep 2024 18:49:29 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 14 Dec 2024 10:08:30 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Empty Struct</title>
+      <link>https://yuang-chen.github.io/posts/2024-12-14-empty-struct/</link>
+      <pubDate>Sat, 14 Dec 2024 10:08:30 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2024-12-14-empty-struct/</guid>
+      <description>Size of Empty Struct In C++, an empty struct has a size of 1 byte. This is due to the C++ standard requirement that no two distinct objects can have the same memory address, so even empty structures must have a non-zero size.
+The minimum addressable unit in most computer architectures is 1 byte So while it might seem logical to make it 0 bytes since it contains no data, that would violate the requirement that objects must have unique addresses.</description>
+    </item>
+    
     <item>
       <title>Performance Comparisons: Half, Half2 and Float</title>
       <link>https://yuang-chen.github.io/posts/2024-09-12-half-half2-float/</link>
