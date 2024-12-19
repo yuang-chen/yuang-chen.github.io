@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Alignment on Yac&#39;s Log</title>
+    <link>https://yuang-chen.github.io/tags/alignment/</link>
+    <description>Recent content in Alignment on Yac&#39;s Log</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 19 Dec 2024 09:25:40 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/tags/alignment/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Struct Alignment and Padding</title>
+      <link>https://yuang-chen.github.io/posts/2024-12-18-alignment-and-padding/</link>
+      <pubDate>Thu, 19 Dec 2024 09:25:40 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2024-12-18-alignment-and-padding/</guid>
+      <description>In a struct, the padded bytes depend on the alignment requirement of the next member following the current member, because the compiler must ensure proper and efficient access to memory.
+Alignment Requirement: Each data type has a required alignment, which is typically a power of two. For example:
+char: 1-byte alignment int: 4-byte alignment long (on a 64-bit system): 8-byte alignment double: 8-byte alignment Padding: When laying out struct members, if the next member needs stricter (i.</description>
+    </item>
+    
+    <item>
+      <title>Empty Struct</title>
+      <link>https://yuang-chen.github.io/posts/2024-12-14-empty-struct/</link>
+      <pubDate>Sat, 14 Dec 2024 10:08:30 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2024-12-14-empty-struct/</guid>
+      <description>Size of Empty Struct In C++, an empty struct has a size of 1 byte. This is due to the C++ standard requirement that no two distinct objects can have the same memory address, so even empty structures must have a non-zero size.
+The minimum addressable unit in most computer architectures is 1 byte So while it might seem logical to make it 0 bytes since it contains no data, that would violate the requirement that objects must have unique addresses.</description>
+    </item>
+    
+  </channel>
+</rss>

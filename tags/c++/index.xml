@@ -6,7 +6,18 @@
     <description>Recent content in C&#43;&#43; on Yac&#39;s Log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Dec 2024 10:08:30 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/tags/c++/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 Dec 2024 09:25:40 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/tags/c++/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Struct Alignment and Padding</title>
+      <link>https://yuang-chen.github.io/posts/2024-12-18-alignment-and-padding/</link>
+      <pubDate>Thu, 19 Dec 2024 09:25:40 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2024-12-18-alignment-and-padding/</guid>
+      <description>In a struct, the padded bytes depend on the alignment requirement of the next member following the current member, because the compiler must ensure proper and efficient access to memory.
+Alignment Requirement: Each data type has a required alignment, which is typically a power of two. For example:
+char: 1-byte alignment int: 4-byte alignment long (on a 64-bit system): 8-byte alignment double: 8-byte alignment Padding: When laying out struct members, if the next member needs stricter (i.</description>
+    </item>
+    
     <item>
       <title>Empty Struct</title>
       <link>https://yuang-chen.github.io/posts/2024-12-14-empty-struct/</link>

@@ -6,7 +6,27 @@
     <description>Recent content on Yac&#39;s Log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Dec 2024 10:08:30 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 Dec 2024 09:27:28 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2024 12 19 Empty Data Members</title>
+      <link>https://yuang-chen.github.io/posts/2024-12-19-empty-data-members/</link>
+      <pubDate>Thu, 19 Dec 2024 09:27:28 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2024-12-19-empty-data-members/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Struct Alignment and Padding</title>
+      <link>https://yuang-chen.github.io/posts/2024-12-18-alignment-and-padding/</link>
+      <pubDate>Thu, 19 Dec 2024 09:25:40 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2024-12-18-alignment-and-padding/</guid>
+      <description>In a struct, the padded bytes depend on the alignment requirement of the next member following the current member, because the compiler must ensure proper and efficient access to memory.
+Alignment Requirement: Each data type has a required alignment, which is typically a power of two. For example:
+char: 1-byte alignment int: 4-byte alignment long (on a 64-bit system): 8-byte alignment double: 8-byte alignment Padding: When laying out struct members, if the next member needs stricter (i.</description>
+    </item>
+    
     <item>
       <title>Empty Struct</title>
       <link>https://yuang-chen.github.io/posts/2024-12-14-empty-struct/</link>
@@ -481,7 +501,7 @@ The parallel library brough by C++17 requires the usage of Intel&amp;rsquo;s one
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://yuang-chen.github.io/about/aboutme/</guid>
-      <description>I am now a Postdoc at CUHK, and graduated from CUHK on Shenzhen campus for my PhD. My CV is da.
+      <description>I am now a Postdoc at CUHK, and completed my PhD in 2.5 years from CUHK on Shenzhen campus. My CV is da.
 My research focuses on optimizing sparse workloads for modern computing hardware. This involves addressing the challenge of efficiently processing sparse data structures (containing mostly empty or zero values) on hardware designed for dense, regular computations.
 Parallel Graph algorithms, e,g, PageRank, BFS, Triangle Counting, etc. Sparse matrix multiplication (SpMV, SpMM, SDDMM, SpGEMM) on CPUs and GPUs Graph Neural Network &amp;amp; Sparse Large Language Models.</description>
     </item>
