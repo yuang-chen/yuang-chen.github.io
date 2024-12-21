@@ -6,14 +6,25 @@
     <description>Recent content on Yac&#39;s Log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Dec 2024 09:27:28 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 Dec 2024 09:18:21 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>2024 12 19 Empty Data Members</title>
+      <title>Stateless Type</title>
+      <link>https://yuang-chen.github.io/posts/2024-12-20-stateless-type/</link>
+      <pubDate>Fri, 20 Dec 2024 09:18:21 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2024-12-20-stateless-type/</guid>
+      <description>Stateless Type In C++, the term &amp;ldquo;stateless&amp;rdquo; typically refers to a type (class or struct) that:
+Has no non-static data members, meaning it does not store any instance-specific information. Does not maintain any internal state or data that varies between objects of that type. Stateless types are often empty classes used for utility purposes, such as:
+Custom deleters for smart pointers. #include &amp;lt;memory&amp;gt; #include &amp;lt;iostream&amp;gt; struct EmptyDeleter { void operator()(int* ptr) const { delete ptr; std::cout &amp;lt;&amp;lt; &amp;#34;Deleted\n&amp;#34;; } }; int main() { std::unique_ptr&amp;lt;int, EmptyDeleter&amp;gt; ptr(new int(42)); std::cout &amp;lt;&amp;lt; &amp;#34;Size of unique_ptr: &amp;#34; &amp;lt;&amp;lt; sizeof(ptr) &amp;lt;&amp;lt; &amp;#34; bytes\n&amp;#34;; // 8 bytes return 0; } Tags for template metaprogramming.</description>
+    </item>
+    
+    <item>
+      <title>Empty Data Members</title>
       <link>https://yuang-chen.github.io/posts/2024-12-19-empty-data-members/</link>
       <pubDate>Thu, 19 Dec 2024 09:27:28 +0800</pubDate>
       
       <guid>https://yuang-chen.github.io/posts/2024-12-19-empty-data-members/</guid>
-      <description></description>
+      <description>[[no_unique_address]] [[no_unique_address]] applies to user-defined types (e.g., empty or stateless classes or structs). It does not apply to fundamental types (int, float, etc.), as they always require memory for storage. The attribute optimizes memory layout by allowing empty or stateless user-defined types to overlap memory locations, improving efficiency without violating the C++ object model. Motivation Prior to C++20, Empty Base Optimization (EBO) allowed an empty base class to take zero space when it was inherited by another class.</description>
     </item>
     
     <item>
@@ -33,8 +44,8 @@ char: 1-byte alignment int: 4-byte alignment long (on a 64-bit system): 8-byte a
       <pubDate>Sat, 14 Dec 2024 10:08:30 +0800</pubDate>
       
       <guid>https://yuang-chen.github.io/posts/2024-12-14-empty-struct/</guid>
-      <description>Size of Empty Struct In C++, an empty struct has a size of 1 byte. This is due to the C++ standard requirement that no two distinct objects can have the same memory address, so even empty structures must have a non-zero size.
-The minimum addressable unit in most computer architectures is 1 byte So while it might seem logical to make it 0 bytes since it contains no data, that would violate the requirement that objects must have unique addresses.</description>
+      <description>Definition of an Empty Class An empty class is a class that:
+Contains no non-static data members. May include: Member functions (including operator() or constructors), but these do not contribute to the class size. Static data members, because these are shared across all instances and are not part of the object layout. Does not use virtual functions or polymorphism, which would require the inclusion of a vtable pointer. Inherits from another empty class, as the derived class can still remain empty due to Empty Base Optimization (EBO).</description>
     </item>
     
     <item>

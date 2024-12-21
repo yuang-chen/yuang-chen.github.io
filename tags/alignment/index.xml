@@ -6,7 +6,16 @@
     <description>Recent content in Alignment on Yac&#39;s Log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Dec 2024 09:25:40 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/tags/alignment/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 Dec 2024 09:27:28 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/tags/alignment/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Empty Data Members</title>
+      <link>https://yuang-chen.github.io/posts/2024-12-19-empty-data-members/</link>
+      <pubDate>Thu, 19 Dec 2024 09:27:28 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2024-12-19-empty-data-members/</guid>
+      <description>[[no_unique_address]] [[no_unique_address]] applies to user-defined types (e.g., empty or stateless classes or structs). It does not apply to fundamental types (int, float, etc.), as they always require memory for storage. The attribute optimizes memory layout by allowing empty or stateless user-defined types to overlap memory locations, improving efficiency without violating the C++ object model. Motivation Prior to C++20, Empty Base Optimization (EBO) allowed an empty base class to take zero space when it was inherited by another class.</description>
+    </item>
+    
     <item>
       <title>Struct Alignment and Padding</title>
       <link>https://yuang-chen.github.io/posts/2024-12-18-alignment-and-padding/</link>
@@ -24,8 +33,8 @@ char: 1-byte alignment int: 4-byte alignment long (on a 64-bit system): 8-byte a
       <pubDate>Sat, 14 Dec 2024 10:08:30 +0800</pubDate>
       
       <guid>https://yuang-chen.github.io/posts/2024-12-14-empty-struct/</guid>
-      <description>Size of Empty Struct In C++, an empty struct has a size of 1 byte. This is due to the C++ standard requirement that no two distinct objects can have the same memory address, so even empty structures must have a non-zero size.
-The minimum addressable unit in most computer architectures is 1 byte So while it might seem logical to make it 0 bytes since it contains no data, that would violate the requirement that objects must have unique addresses.</description>
+      <description>Definition of an Empty Class An empty class is a class that:
+Contains no non-static data members. May include: Member functions (including operator() or constructors), but these do not contribute to the class size. Static data members, because these are shared across all instances and are not part of the object layout. Does not use virtual functions or polymorphism, which would require the inclusion of a vtable pointer. Inherits from another empty class, as the derived class can still remain empty due to Empty Base Optimization (EBO).</description>
     </item>
     
   </channel>
