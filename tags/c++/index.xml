@@ -6,14 +6,35 @@
     <description>Recent content in C&#43;&#43; on Yac&#39;s Log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Dec 2024 09:18:21 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/tags/c++/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 24 Dec 2024 10:58:30 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/tags/c++/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>`constexpr` from the perspective of assembly code</title>
+      <link>https://yuang-chen.github.io/posts/2024-12-24-constexpr-assembly/</link>
+      <pubDate>Tue, 24 Dec 2024 10:58:30 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2024-12-24-constexpr-assembly/</guid>
+      <description>constexpr is a keyword in C++ that allows the compiler to evaluate expressions at compile time. This is a powerful feature that can significantly optimize performance by reducing runtime overhead.
+However, I mainly use it for type-related operations. I seldom apply it to data-related tasks, since defining data with constexpr requires constant values, which is rarely feasible in my projects.
+Code with constexpr #include &amp;lt;stddef.h&amp;gt; #include &amp;lt;string_view&amp;gt; #include &amp;lt;algorithm&amp;gt; #include &amp;lt;cstdio&amp;gt; template&amp;lt;size_t N&amp;gt; class FixedString { size_t mSize{}; char mData[N]{}; public: FixedString() = default; // Constructor that computes string length at compile time constexpr FixedString(const char* str) : mSize{std::char_traits&amp;lt;char&amp;gt;::length(str)} { std::copy_n(str, size(), mData); } constexpr size_t size() const { return mSize; } constexpr std::string_view string_view() const { return {mData, mSize}; } }; template&amp;lt;size_t N&amp;gt; constexpr auto make_fixed_string(const char (&amp;amp;str)[N]) { return FixedString&amp;lt;N&amp;gt;{str}; } constexpr const static FixedString&amp;lt;50&amp;gt; x{&amp;#34;Hello, embedded World!</description>
+    </item>
+    
+    <item>
+      <title>[CppCon] Fast and Small C&#43;&#43;</title>
+      <link>https://yuang-chen.github.io/posts/2024-12-13-cppcon-fast-and-small/</link>
+      <pubDate>Sun, 22 Dec 2024 10:49:22 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2024-12-13-cppcon-fast-and-small/</guid>
+      <description>Recently, I watched this talk by Andreas Fertig at CppCon&#39;24. He discussed some very interesting topics, including new C++ features and union-based optimizations for efficient C++ programming.
+To fully understand this talk byte by byte, I tried to re-implement the examples and experiment on my own, figuring out details with the help of ChatGPT. But I quickly found myself going down a rabbit hole of unfamiliar concepts that I’m not quite up to grasp yet.</description>
+    </item>
+    
     <item>
       <title>Stateless Type</title>
       <link>https://yuang-chen.github.io/posts/2024-12-20-stateless-type/</link>
       <pubDate>Fri, 20 Dec 2024 09:18:21 +0800</pubDate>
       
       <guid>https://yuang-chen.github.io/posts/2024-12-20-stateless-type/</guid>
-      <description>Stateless Type In C++, the term &amp;ldquo;stateless&amp;rdquo; typically refers to a type (class or struct) that:
+      <description>In C++, the term &amp;ldquo;stateless&amp;rdquo; typically refers to a type (class or struct) that:
 Has no non-static data members, meaning it does not store any instance-specific information. Does not maintain any internal state or data that varies between objects of that type. Stateless types are often empty classes used for utility purposes, such as:
 Custom deleters for smart pointers. #include &amp;lt;memory&amp;gt; #include &amp;lt;iostream&amp;gt; struct EmptyDeleter { void operator()(int* ptr) const { delete ptr; std::cout &amp;lt;&amp;lt; &amp;#34;Deleted\n&amp;#34;; } }; int main() { std::unique_ptr&amp;lt;int, EmptyDeleter&amp;gt; ptr(new int(42)); std::cout &amp;lt;&amp;lt; &amp;#34;Size of unique_ptr: &amp;#34; &amp;lt;&amp;lt; sizeof(ptr) &amp;lt;&amp;lt; &amp;#34; bytes\n&amp;#34;; // 8 bytes return 0; } Tags for template metaprogramming.</description>
     </item>
@@ -24,7 +45,7 @@ Custom deleters for smart pointers. #include &amp;lt;memory&amp;gt; #include &am
       <pubDate>Thu, 19 Dec 2024 09:27:28 +0800</pubDate>
       
       <guid>https://yuang-chen.github.io/posts/2024-12-19-empty-data-members/</guid>
-      <description>[[no_unique_address]] [[no_unique_address]] applies to user-defined types (e.g., empty or stateless classes or structs). It does not apply to fundamental types (int, float, etc.), as they always require memory for storage. The attribute optimizes memory layout by allowing empty or stateless user-defined types to overlap memory locations, improving efficiency without violating the C++ object model. Motivation Prior to C++20, Empty Base Optimization (EBO) allowed an empty base class to take zero space when it was inherited by another class.</description>
+      <description>[[no_unique_address]] since C++20 [[no_unique_address]] applies to user-defined types (e.g., empty or stateless classes or structs). It does not apply to fundamental types (int, float, etc.), as they always require memory for storage. The attribute optimizes memory layout by allowing empty or stateless user-defined types to overlap memory locations, improving efficiency without violating the C++ object model. Motivation Prior to C++20, Empty Base Optimization (EBO) allowed an empty base class to take zero space when it was inherited by another class.</description>
     </item>
     
     <item>

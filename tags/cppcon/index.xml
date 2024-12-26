@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>CppCon on Yac&#39;s Log</title>
+    <link>https://yuang-chen.github.io/tags/cppcon/</link>
+    <description>Recent content in CppCon on Yac&#39;s Log</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 22 Dec 2024 10:49:22 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/tags/cppcon/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[CppCon] Fast and Small C&#43;&#43;</title>
+      <link>https://yuang-chen.github.io/posts/2024-12-13-cppcon-fast-and-small/</link>
+      <pubDate>Sun, 22 Dec 2024 10:49:22 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2024-12-13-cppcon-fast-and-small/</guid>
+      <description>Recently, I watched this talk by Andreas Fertig at CppCon&#39;24. He discussed some very interesting topics, including new C++ features and union-based optimizations for efficient C++ programming.
+To fully understand this talk byte by byte, I tried to re-implement the examples and experiment on my own, figuring out details with the help of ChatGPT. But I quickly found myself going down a rabbit hole of unfamiliar concepts that I’m not quite up to grasp yet.</description>
+    </item>
+    
+  </channel>
+</rss>

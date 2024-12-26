@@ -13,7 +13,7 @@
       <pubDate>Thu, 19 Dec 2024 09:27:28 +0800</pubDate>
       
       <guid>https://yuang-chen.github.io/posts/2024-12-19-empty-data-members/</guid>
-      <description>[[no_unique_address]] [[no_unique_address]] applies to user-defined types (e.g., empty or stateless classes or structs). It does not apply to fundamental types (int, float, etc.), as they always require memory for storage. The attribute optimizes memory layout by allowing empty or stateless user-defined types to overlap memory locations, improving efficiency without violating the C++ object model. Motivation Prior to C++20, Empty Base Optimization (EBO) allowed an empty base class to take zero space when it was inherited by another class.</description>
+      <description>[[no_unique_address]] since C++20 [[no_unique_address]] applies to user-defined types (e.g., empty or stateless classes or structs). It does not apply to fundamental types (int, float, etc.), as they always require memory for storage. The attribute optimizes memory layout by allowing empty or stateless user-defined types to overlap memory locations, improving efficiency without violating the C++ object model. Motivation Prior to C++20, Empty Base Optimization (EBO) allowed an empty base class to take zero space when it was inherited by another class.</description>
     </item>
     
     <item>
