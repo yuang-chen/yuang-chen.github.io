@@ -6,7 +6,17 @@
     <description>Recent content on Yac&#39;s Log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Dec 2024 10:58:30 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 28 Dec 2024 23:03:50 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Initializer List</title>
+      <link>https://yuang-chen.github.io/posts/2024-12-28-initializer-list/</link>
+      <pubDate>Sat, 28 Dec 2024 23:03:50 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2024-12-28-initializer-list/</guid>
+      <description>In a prior post, I talked about list initialization, which is differs from initializer_list discussed here. Though personally, I don&amp;rsquo;t find initializer_list really useful as I never used it in my projects.
+list initialization is a general syntax using {} for initializing a variety of variables and objects. initializer_list is a template class representing a lightweight, read-only array of elements, typically used in constructors or functions. initializer_list promotes safety, flexibility and modern tone compared to the raw array.</description>
+    </item>
+    
     <item>
       <title>`constexpr` from the perspective of assembly code</title>
       <link>https://yuang-chen.github.io/posts/2024-12-24-constexpr-assembly/</link>
@@ -16,16 +26,6 @@
       <description>constexpr is a keyword in C++ that allows the compiler to evaluate expressions at compile time. This is a powerful feature that can significantly optimize performance by reducing runtime overhead.
 However, I mainly use it for type-related operations. I seldom apply it to data-related tasks, since defining data with constexpr requires constant values, which is rarely feasible in my projects.
 Code with constexpr #include &amp;lt;stddef.h&amp;gt; #include &amp;lt;string_view&amp;gt; #include &amp;lt;algorithm&amp;gt; #include &amp;lt;cstdio&amp;gt; template&amp;lt;size_t N&amp;gt; class FixedString { size_t mSize{}; char mData[N]{}; public: FixedString() = default; // Constructor that computes string length at compile time constexpr FixedString(const char* str) : mSize{std::char_traits&amp;lt;char&amp;gt;::length(str)} { std::copy_n(str, size(), mData); } constexpr size_t size() const { return mSize; } constexpr std::string_view string_view() const { return {mData, mSize}; } }; template&amp;lt;size_t N&amp;gt; constexpr auto make_fixed_string(const char (&amp;amp;str)[N]) { return FixedString&amp;lt;N&amp;gt;{str}; } constexpr const static FixedString&amp;lt;50&amp;gt; x{&amp;#34;Hello, embedded World!</description>
-    </item>
-    
-    <item>
-      <title>[CppCon] Fast and Small C&#43;&#43;</title>
-      <link>https://yuang-chen.github.io/posts/2024-12-13-cppcon-fast-and-small/</link>
-      <pubDate>Sun, 22 Dec 2024 10:49:22 +0800</pubDate>
-      
-      <guid>https://yuang-chen.github.io/posts/2024-12-13-cppcon-fast-and-small/</guid>
-      <description>Recently, I watched this talk by Andreas Fertig at CppCon&#39;24. He discussed some very interesting topics, including new C++ features and union-based optimizations for efficient C++ programming.
-To fully understand this talk byte by byte, I tried to re-implement the examples and experiment on my own, figuring out details with the help of ChatGPT. But I quickly found myself going down a rabbit hole of unfamiliar concepts that I’m not quite up to grasp yet.</description>
     </item>
     
     <item>
@@ -51,7 +51,7 @@ Custom deleters for smart pointers. #include &amp;lt;memory&amp;gt; #include &am
     <item>
       <title>Struct Alignment and Padding</title>
       <link>https://yuang-chen.github.io/posts/2024-12-18-alignment-and-padding/</link>
-      <pubDate>Thu, 19 Dec 2024 09:25:40 +0800</pubDate>
+      <pubDate>Wed, 18 Dec 2024 09:25:40 +0800</pubDate>
       
       <guid>https://yuang-chen.github.io/posts/2024-12-18-alignment-and-padding/</guid>
       <description>In a struct, the padded bytes depend on the alignment requirement of the next member following the current member, because the compiler must ensure proper and efficient access to memory.
@@ -67,6 +67,16 @@ char: 1-byte alignment int: 4-byte alignment long (on a 64-bit system): 8-byte a
       <guid>https://yuang-chen.github.io/posts/2024-12-14-empty-struct/</guid>
       <description>Definition of an Empty Class An empty class is a class that:
 Contains no non-static data members. May include: Member functions (including operator() or constructors), but these do not contribute to the class size. Static data members, because these are shared across all instances and are not part of the object layout. Does not use virtual functions or polymorphism, which would require the inclusion of a vtable pointer. Inherits from another empty class, as the derived class can still remain empty due to Empty Base Optimization (EBO).</description>
+    </item>
+    
+    <item>
+      <title>[CppCon] Fast and Small C&#43;&#43;</title>
+      <link>https://yuang-chen.github.io/posts/2024-12-13-cppcon-fast-and-small/</link>
+      <pubDate>Fri, 13 Dec 2024 10:49:22 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2024-12-13-cppcon-fast-and-small/</guid>
+      <description>Recently, I watched this talk by Andreas Fertig at CppCon&#39;24. He discussed some very interesting topics, including new C++ features and union-based optimizations for efficient C++ programming.
+To fully understand this talk byte by byte, I tried to re-implement the examples and experiment on my own, figuring out details with the help of ChatGPT. But I quickly found myself going down a rabbit hole of unfamiliar concepts that I’m not quite up to grasp yet.</description>
     </item>
     
     <item>

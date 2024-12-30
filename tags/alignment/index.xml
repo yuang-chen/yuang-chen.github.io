@@ -19,7 +19,7 @@
     <item>
       <title>Struct Alignment and Padding</title>
       <link>https://yuang-chen.github.io/posts/2024-12-18-alignment-and-padding/</link>
-      <pubDate>Thu, 19 Dec 2024 09:25:40 +0800</pubDate>
+      <pubDate>Wed, 18 Dec 2024 09:25:40 +0800</pubDate>
       
       <guid>https://yuang-chen.github.io/posts/2024-12-18-alignment-and-padding/</guid>
       <description>In a struct, the padded bytes depend on the alignment requirement of the next member following the current member, because the compiler must ensure proper and efficient access to memory.
