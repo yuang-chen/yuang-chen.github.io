@@ -6,7 +6,17 @@
     <description>Recent content in C&#43;&#43; on Yac&#39;s Log</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Dec 2024 23:03:50 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/tags/c++/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 31 Dec 2024 08:29:11 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/tags/c++/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Small String Optimization</title>
+      <link>https://yuang-chen.github.io/posts/2024-12-31-small-string-optimization/</link>
+      <pubDate>Tue, 31 Dec 2024 08:29:11 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2024-12-31-small-string-optimization/</guid>
+      <description>The basic struct of string consists of three members:
+struct string { char* mPtr; // dynamically allocated memory size_t mSize; // the length of the string size_t mCapacity; // the size of allocated memory }; Allocating memory for small strings (e.g., empty string with a null \0 character) is wasteful. Hence, to avoid this waste, most implementations of string structs apply Small String Optimization (SSO), which stores small strings directly within the string object on the stack, rather than allocating memory dynamically on the heap.</description>
+    </item>
+    
     <item>
       <title>Initializer List</title>
       <link>https://yuang-chen.github.io/posts/2024-12-28-initializer-list/</link>
