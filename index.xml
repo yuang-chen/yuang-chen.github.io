@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Yac&#39;s Log</title>
+    <title>陈宇昂 | YuAng Chen</title>
     <link>https://yuang-chen.github.io/</link>
-    <description>Recent content on Yac&#39;s Log</description>
+    <description>Recent content on 陈宇昂 | YuAng Chen</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>zh-cn</language>
     <lastBuildDate>Tue, 31 Dec 2024 08:29:11 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Small String Optimization</title>
@@ -15,15 +15,6 @@
       <guid>https://yuang-chen.github.io/posts/2024-12-31-small-string-optimization/</guid>
       <description>The basic struct of string consists of three members:
 struct string { char* mPtr; // dynamically allocated memory size_t mSize; // the length of the string size_t mCapacity; // the size of allocated memory }; Allocating memory for small strings (e.g., empty string with a null \0 character) is wasteful. Hence, to avoid this waste, most implementations of string structs apply Small String Optimization (SSO), which stores small strings directly within the string object on the stack, rather than allocating memory dynamically on the heap.</description>
-    </item>
-    
-    <item>
-      <title>2024 12 31 Constexpr Static</title>
-      <link>https://yuang-chen.github.io/posts/2024-12-31-constexpr-static/</link>
-      <pubDate>Tue, 31 Dec 2024 08:28:44 +0800</pubDate>
-      
-      <guid>https://yuang-chen.github.io/posts/2024-12-31-constexpr-static/</guid>
-      <description></description>
     </item>
     
     <item>
@@ -557,14 +548,12 @@ The parallel library brough by C++17 requires the usage of Intel&amp;rsquo;s one
     </item>
     
     <item>
-      <title>About Me</title>
+      <title>关于陈宇昂</title>
       <link>https://yuang-chen.github.io/about/aboutme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://yuang-chen.github.io/about/aboutme/</guid>
-      <description>I am now a Postdoc at CUHK, and completed my PhD in 2.5 years from CUHK on Shenzhen campus. My CV is da.
-My research focuses on optimizing sparse workloads for modern computing hardware. This involves addressing the challenge of efficiently processing sparse data structures (containing mostly empty or zero values) on hardware designed for dense, regular computations.
-Parallel Graph algorithms, e,g, PageRank, BFS, Triangle Counting, etc. Sparse matrix multiplication (SpMV, SpMM, SDDMM, SpGEMM) on CPUs and GPUs Graph Neural Network &amp;amp; Sparse Large Language Models.</description>
+      <description>我现任华为港研所 2012 实验室高级研究员，从事高效大模型推理研究。此前在香港中文大学计算机科学与工程系担任博士后。我在香港中文大学（深圳）用两年半</description>
     </item>
     
     

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>STL on Yac&#39;s Log</title>
+    <title>STL on 陈宇昂 | YuAng Chen</title>
     <link>https://yuang-chen.github.io/tags/stl/</link>
-    <description>Recent content in STL on Yac&#39;s Log</description>
+    <description>Recent content in STL on 陈宇昂 | YuAng Chen</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>zh-cn</language>
     <lastBuildDate>Sat, 14 Oct 2023 12:17:12 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/tags/stl/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Priority Queue</title>
