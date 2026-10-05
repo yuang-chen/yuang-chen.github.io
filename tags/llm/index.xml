@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>LLM on 陈宇昂 | YuAng Chen</title>
+    <link>https://yuang-chen.github.io/tags/llm/</link>
+    <description>Recent content in LLM on 陈宇昂 | YuAng Chen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 30 Sep 2026 16:00:00 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/tags/llm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GDN State Matrix有效维度分析</title>
+      <link>https://yuang-chen.github.io/posts/2026-09-30-state-rank/</link>
+      <pubDate>Wed, 30 Sep 2026 16:00:00 +0800</pubDate>
+      
+      <guid>https://yuang-chen.github.io/posts/2026-09-30-state-rank/</guid>
+      <description>Gated DeltaNet 的状态(State)到底用了多少？把剩下的部分丢掉，又会发生什么？ Qwen3.5-0.8B 的每个线性注意力 head 都维护一个 128×128 的矩阵作为 memory。跑</description>
+    </item>
+    
+  </channel>
+</rss>
