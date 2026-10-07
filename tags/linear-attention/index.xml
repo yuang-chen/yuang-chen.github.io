@@ -6,14 +6,15 @@
     <description>Recent content in Linear Attention on 陈宇昂 | YuAng Chen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 30 Sep 2026 16:00:00 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/tags/linear-attention/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Oct 2026 17:00:00 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/tags/linear-attention/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>GDN State Matrix有效维度分析</title>
-      <link>https://yuang-chen.github.io/posts/2026-09-30-state-rank/</link>
-      <pubDate>Wed, 30 Sep 2026 16:00:00 +0800</pubDate>
+      <title>Analysis of Gated DeltaNet&#39;s state</title>
+      <link>https://yuang-chen.github.io/posts/2026-10-06-kernel-directions/</link>
+      <pubDate>Tue, 06 Oct 2026 17:00:00 +0800</pubDate>
       
-      <guid>https://yuang-chen.github.io/posts/2026-09-30-state-rank/</guid>
-      <description>Gated DeltaNet 的状态(State)到底用了多少？把剩下的部分丢掉，又会发生什么？ Qwen3.5-0.8B 的每个线性注意力 head 都维护一个 128×128 的矩阵作为 memory。跑</description>
+      <guid>https://yuang-chen.github.io/posts/2026-10-06-kernel-directions/</guid>
+      <description>Each Gated DeltaNet head in Qwen3.5-0.8B carries a $128\times128$ state matrix. I wanted to know how much of that state the trained model depends on. I measured its singular values, then repeatedly removed lower-energy modes during inference.
+On the tested web-text documents, keeping only 48 modes per head left next-token loss essentially unchanged. Keeping 12 increased loss by just 0.005 nats. Several retrieval tasks also tolerated substantial truncation. But the result depended on the task: at 64K, truncation improved variable tracking and sharply hurt common-word counting.</description>
     </item>
     
   </channel>
