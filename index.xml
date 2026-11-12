@@ -5,10 +5,10 @@
     <link>https://yuang-chen.github.io/</link>
     <description>Recent content on 陈宇昂 | YuAng Chen</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>en-us</language>
     <lastBuildDate>Tue, 06 Oct 2026 17:00:00 +0800</lastBuildDate><atom:link href="https://yuang-chen.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Analysis of Gated DeltaNet&#39;s state</title>
+      <title>Analysis of Gated DeltaNet&#39;s State Matrix</title>
       <link>https://yuang-chen.github.io/posts/2026-10-06-kernel-directions/</link>
       <pubDate>Tue, 06 Oct 2026 17:00:00 +0800</pubDate>
       
@@ -557,6 +557,8 @@ A blog about it.
 The parallel library brough by C++17 requires the usage of Intel&amp;rsquo;s oneTBB for multithreading.</description>
     </item>
     
+    
+    
     <item>
       <title>关于陈宇昂</title>
       <link>https://yuang-chen.github.io/about/aboutme/</link>
@@ -565,8 +567,6 @@ The parallel library brough by C++17 requires the usage of Intel&amp;rsquo;s one
       <guid>https://yuang-chen.github.io/about/aboutme/</guid>
       <description>我现任华为香港研究所 2012 实验室高级研究员，主要从事高效大模型推理与人工智能系统研究。此前曾任香港中文大学计算机科学与工程系博士后。我在香港中文</description>
     </item>
-    
-    
     
   </channel>
 </rss>
